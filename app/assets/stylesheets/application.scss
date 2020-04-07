@@ -19,9 +19,12 @@
 #page-container {
   position: relative;
   min-height: 100vh;
+  background-color: white;
 }
 #content-wrap {
   padding-bottom: 3.6rem;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+  background: darkslategray;
+  // background: linear-gradient(70deg,white, darkslategray)
 }
