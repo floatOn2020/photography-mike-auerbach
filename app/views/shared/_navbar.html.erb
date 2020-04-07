@@ -1,45 +1,35 @@
+
+
+<div class="navbar navbar-expand-sm navbar-light">
+  <div>
+    <%= link_to "MIKE AUERBACH PHOTOGRAPHY", categories_path, class: "navbar-brand",id: "mikeauerbach-header" %>
+  </div>
+
+</div>
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "MIKE AUERBACH PHOTOGRAPHY", categories_path, class: "navbar-brand" %>
-
-
+  <!-- this is the burger-menu -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
+        <li class="">
           <%= link_to "Home", root_path, class: "nav-link" %>
         </li>
-        <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
+          <%= link_to "People", categories_path, class: "nav-link" %>
+        <li class="">
+          <%= link_to "Architecture", categories_path, class: "nav-link" %>
+        </li class="nav-item active">
+        <li>
+          <%= link_to "Landscape", categories_path, class: "nav-link" %>
         </li>
-        <li class="nav-item dropdown">
-          <i class="fas fa-bars avatar dropdown-toggle", id= "navbarDropdown"> </i> cl
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
+        <li class="">
+          <%= link_to "Design/Interieur", categories_path, class: "nav-link" %>
         </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        <li class="">
+          <%= link_to "Various", categories_path, class: "nav-link" %>
         </li>
-      <% end %>
     </ul>
   </div>
 </div>
-
-<!-- <div class="header">
-  <div id ="mikeauerbach-header"><%#= link_to "PHOTOGRAPHY MIKE AUERBACH", root_path%></div>
-  <div class="nav-links">
-    <%#= link_to "People", categories_path %>
-    <%#= link_to "Architecture", categories_path %>
-    <%#= link_to "Landscape", categories_path %>
-    <%#= link_to "Design/Interieur", categories_path %>
-    <%#= link_to "Various", categories_path %>
-  </div>
-</div> -->
