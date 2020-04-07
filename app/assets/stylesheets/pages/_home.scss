@@ -1,1 +1,50 @@
-// Specific CSS for your home-page
+.container {
+  max-width: 9000px;
+}
+a {
+  text-decoration: none !important;
+}
+.backgr {
+  margin: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('home-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-min-width: 100vw;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(255,255,255,0.4)), url('home-background.jpg');
+  }
+  &:hover #mikeauerbachhome {
+  font-size: 5.5rem;
+  }
+
+}
+
+.home-logo {
+  height: 100vh;
+}
+
+.center-div {
+  display: inline-flex;
+  margin: 0;
+  padding: 0 !important;
+  width: auto;
+  max-width: 9000px;
+}
+
+#mikeauerbachhome {
+  text-align: start;
+  color: $light-gray;
+  font-size: 5rem;
+  line-height: 0.9;
+  box-sizing: content-box;
+}
+
+@media only screen and (max-width: 600px) {
+  #mikeauerbachhome {
+    font-size: 4rem;
+  }
+}
