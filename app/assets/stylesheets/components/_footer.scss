@@ -21,7 +21,18 @@
   font-size: 17px;
   padding: 15px 10px;
 }
-.footer-links a:hover {
+.footer-links a:hover, #login-logout a:hover {
   opacity: 1;
 }
 
+#login-logout {
+  height: 10px;
+  background-color: white;
+  a {
+    color: $medium-gray;
+    opacity: 0.5;
+    margin: auto 0.2rem;
+    padding: 0;
+    font-size: 12px;
+  }
+}

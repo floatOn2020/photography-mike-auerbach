@@ -1,16 +1,24 @@
-.cat-img {
-  height: 100%;
+// the row
+.cards-contain {
+  justify-content: space-around;
 }
+
+// the column
 #cat-card {
   margin: 0.5rem;
   padding:0;
   background-color: none !important;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
-.cards-container {
-  justify-content: space-around;
+
+.cat-img {
+  height: 100%;
 }
+
 #category-name {
   position: absolute;
+  color: white;
+  font-weight: bold;
 }
