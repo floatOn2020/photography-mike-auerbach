@@ -12,6 +12,10 @@ class CategoriesController < ApplicationController
     # @shootings = Shooting.where(category == @category.name)
   end
 
+  def filter_categories_for_links
+    @category = Category.where(category: "#{params[:query]}")
+  end
+
   def edit
   end
 

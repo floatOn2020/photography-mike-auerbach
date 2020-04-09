@@ -17,18 +17,20 @@
         <li class="">
           <%= link_to "Home", root_path, class: "nav-link" %>
         </li>
-          <%= link_to "People", categories_path, class: "nav-link" %>
-        <li class="">
-          <%= link_to "Architecture", categories_path, class: "nav-link" %>
-        </li class="nav-item active">
         <li>
-          <%= link_to "Landscape", categories_path, class: "nav-link" %>
+          <%= link_to "People", this_category_path, class: "nav-link" %>
         </li>
-        <li class="">
-          <%= link_to "Design/Interieur", categories_path, class: "nav-link" %>
+        <li>
+          <%= link_to "Architecture", this_category_path, class: "nav-link" %>
         </li>
-        <li class="">
-          <%= link_to "Various", categories_path, class: "nav-link" %>
+        <li>
+          <%= link_to "Landscape", this_category_path, class: "nav-link" %>
+        </li>
+        <li>
+          <%= link_to "Design/Interieur", this_category_path, class: "nav-link" %>
+        </li>
+        <li>
+          <%= link_to "Various", this_category_path, class: "nav-link" %>
         </li>
     </ul>
   </div>
