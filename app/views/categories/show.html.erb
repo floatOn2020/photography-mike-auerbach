@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row cards-contain">
     <% @shootings.each do |shoot|%>
-      <%= link_to category_path(shoot)do %>
+      <%= link_to shooting_path(shoot)do %>
         <div id = "cat-card" class="card col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
           <%= cl_image_tag shoot.cover.key, {class: "card-img-top cat-img"}%>
           <h3 id='subject'> <%= shoot.who_or_what %> </h3>
