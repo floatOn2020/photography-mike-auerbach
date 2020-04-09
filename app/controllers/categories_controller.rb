@@ -10,7 +10,6 @@ class CategoriesController < ApplicationController
     @category.shooting_ids.each { |shoot| @shootings << Shooting.find(shoot)}
     # where(@category == Shooting.category)
     # @shootings = Shooting.where(category == @category.name)
-
   end
 
   def edit
