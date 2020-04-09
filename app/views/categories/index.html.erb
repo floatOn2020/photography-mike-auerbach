@@ -1,9 +1,11 @@
 <div class="container-fluid">
   <div class="row cards-contain">
     <% @categories.each do |category|%>
-      <div id = "cat-card" class="card col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-        <%= render 'shared/category-card', category: category %>
-      </div>
+      <%= link_to category_path(category)do %>
+        <div id = "cat-card" class="card col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+          <%= render 'shared/category-card', category: category %>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>

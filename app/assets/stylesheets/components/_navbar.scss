@@ -1,26 +1,28 @@
 .navbar-lewagon {
-  justify-content: space-between;
+  justify-content: center;
   background: white;
-  background-color: white;
   margin-top: -20px;
+}
+
+.hoverable {
   a {
-    color: $gray;
-    opacity: 0.8;
-    &:hover {
-      opacity: 1;
-    }
+  color: $gray;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
   }
 }
 
+}
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  justify-content: start;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
 .navbar-toggler {
-  margin-left: 0.5rem;
   // position: fixed;
   // top: 92vh;
   // left: 83vw;
@@ -34,6 +36,10 @@
     padding: 0 15px;
   }
 }
+
+// .navbar-expand-sm[aria-expanded="false"] {
+//   justify-content: start;
+// }
 
 #mikeauerbach-header {
   font-size: 1.5rem;
