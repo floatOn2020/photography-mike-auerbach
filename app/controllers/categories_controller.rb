@@ -16,6 +16,19 @@ class CategoriesController < ApplicationController
     @category = Category.where(category: "#{params[:query]}")
   end
 
+  def new
+    @category = Category.new
+  end
+
+  def create
+    @category = Category.new(category_params)
+    if @category.save!
+      redirect_to categories_path
+    else
+      render :new
+    end
+  end
+
   def edit
     # @goal = find_goal
     # @milestones = @goal.milestones
@@ -39,22 +52,6 @@ class CategoriesController < ApplicationController
     # end
   end
 
-  def new
-    @category = Category.new
-  end
-
-  def create
-    #     @goal = Goal.new(goal_params)
-    # @goal.user = current_user
-    # @activity = Activity.find(params[:goal][:activity][:name])
-    # @goal.activity_id = @activity.id
-    # @goal.completed = false # test line Lino
-    # if @goal.save!
-    #   redirect_to dashboard_goals_path
-    # else
-    #   render :new
-    # end
-  end
 
   def destroy
     @category.destroy
@@ -72,7 +69,7 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
   end
 
-  # def goal_params
-  #   params.require(:goal).permit(:title, :motivation, :activity_id, :completed, :photo , milestones_attributes: [:name, :description, :done,  :price_cents], activity_attributes: [:name, :location, :category]) #Milestone.attribute_names.map(:to_sym).push(:_destroy))
-  # end
+  def category_params
+    params.require(:category).permit(:name, :cover)
+  end
 end
