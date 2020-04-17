@@ -1,11 +1,14 @@
 <div class="container-fluid">
   <div class="row cards-contain">
     <% @categories.each do |category|%>
-        <div id = "cat-card" class="card col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-          <%= link_to category_path(category)do %>
-            <%= render 'shared/category-card', category: category %>
-          <% end %>
-        </div>
+        <%= link_to category_path(category) do %>
+          <div id = "cat-card" class="card col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+            <%= cl_image_tag category.cover.key, {class: "card-img-top cat-img"}%>
+            <h3 class='category-name'> <%= category.name %> </h3>
+            <%= link_to "delete this category", category_path(category), method: :delete %>
+            <p><%#= link_to "delete Goal", goal_path(goal), class: "btn btn-flat-small", method: :delete, remote: true %> </p>
+        <% end %>
+          </div>
     <% end %>
   </div>
 </div>

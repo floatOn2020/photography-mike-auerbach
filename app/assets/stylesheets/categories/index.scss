@@ -8,3 +8,25 @@
   min-height: 77vh;
   padding-top: 0.5rem;
 }
+
+// category-card, the column
+#cat-card {
+  margin: 0.5rem;
+  padding:0;
+  background-color: none !important;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+}
+
+.cat-img {
+  position: relative;
+}
+
+.category-name {
+  position: absolute;
+  top: 120px;
+  color: white;
+  font-weight: bold;
+}
