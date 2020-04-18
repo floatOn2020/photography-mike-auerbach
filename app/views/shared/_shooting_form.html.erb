@@ -1,0 +1,9 @@
+<%= simple_form_for @shooting do |f| %>
+  <%= f.input :who_or_what %>
+  <%= f.input :place %>
+  <%= f.input :date %>
+  <%= f.association :category %>
+  <%= f.input :cover, as: :file %>
+  <%= f.input :photos, as: :file, multiple: :true %>
+  <%= f.submit %>
+<% end %>

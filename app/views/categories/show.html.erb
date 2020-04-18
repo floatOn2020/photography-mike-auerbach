@@ -1,3 +1,4 @@
+<h2>CATEGORY SHOW (@shootings of chosen category) </h2>
 <div class="container-fluid">
   <div class="row cards-contain">
     <% @shootings.each do |shoot|%>
@@ -5,6 +6,7 @@
         <div id = "cat-card" class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
           <%= cl_image_tag shoot.cover.key, {class: "card-img-top"}%>
           <h3 clas="category-name"> <%= shoot.who_or_what %> </h3>
+          <%= link_to "edit this shooting", edit_shooting_path(shoot) %>
       <% end %>
         </div>
     <% end %>

@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :find_category, only: [:show, :destroy]
+  before_action :find_category, only: [:show, :edit, :destroy, :update]
 
   def index
     @categories = Category.all
@@ -29,27 +29,14 @@ class CategoriesController < ApplicationController
     end
   end
 
-  def edit
-    # @goal = find_goal
-    # @milestones = @goal.milestones
-    # @milestones.each do |milestone|
-    #   milestone.done = false
-    # end
-    # # @goal.milestones.build
-    # @activities = Activity.all
-  end
+  def edit; end
 
   def update
-    # @goal = Goal.new(goal_params)
-    # @goal.user = current_user
-    # @activity = Activity.find(params[:goal][:activity][:name])
-    # @goal.activity_id = @activity.id
-    # @goal.completed = false
-    # if @goal.save!
-    #   redirect_to dashboard_goals_path
-    # else
-    #   render :edit
-    # end
+    if @category.update(category_params)
+      redirect_to categories_path
+    else
+      render :edit
+    end
   end
 
 
