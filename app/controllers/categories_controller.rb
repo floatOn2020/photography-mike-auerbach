@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   before_action :find_category, only: [:show, :edit, :destroy, :update]
 
   def index
-    @categories = Category.all
+    @categories = Category.includes(cover_attachment: :blob)
   end
 
   def show
