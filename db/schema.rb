@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_21_143505) do
+ActiveRecord::Schema.define(version: 2020_04_21_151005) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,13 @@ ActiveRecord::Schema.define(version: 2020_04_21_143505) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "photos", force: :cascade do |t|
+    t.bigint "shootings_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["shootings_id"], name: "index_photos_on_shootings_id"
+  end
+
   create_table "shootings", force: :cascade do |t|
     t.string "who_or_what"
     t.string "place"
@@ -66,5 +73,6 @@ ActiveRecord::Schema.define(version: 2020_04_21_143505) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "photos", "shootings", column: "shootings_id"
   add_foreign_key "shootings", "categories"
 end
