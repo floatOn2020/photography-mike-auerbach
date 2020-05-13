@@ -1,13 +1,13 @@
 <h3>Work in progress, sample images from unsplash.</h3>
-  <div class="car row h-70">
-    <div id="carouselExampleFade" class=" carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner" >
-        <div class="carousel-item active">
+  <div class="car row ">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner " >
+        <div class="carousel-item active ">
           <%= cl_image_tag @shooting.photos[0].key%>
         </div>
         <% @shooting.photos.each do |photo|%>
           <div class="carousel-item item">
-            <%= cl_image_tag photo.key%>
+            <%= cl_image_tag photo.key, {class: "h-70"}%>
           </div>
         <% end %>
       </div>
