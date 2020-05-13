@@ -15,8 +15,10 @@
     <div id="page-container">
       <%= render 'shared/navbar' %>
       <%= render 'shared/flashes' %>
-      <div id="content-wrap">
-        <%= yield %>
+      <div class="content">
+        <div id="content-wrap">
+          <%= yield %>
+        </div>
       </div>
       <%= render 'shared/footer' %>
     </div>

@@ -6,6 +6,7 @@
   </div>
   <div id="login-logout">
     <% if user_signed_in? %>
+        <%= link_to "Admin Area", rails_admin_path%>
         <%= link_to "Admin Logout", destroy_user_session_path, method: :delete%>
     <% else %>
         <%= link_to "Admin Login", new_user_session_path%>

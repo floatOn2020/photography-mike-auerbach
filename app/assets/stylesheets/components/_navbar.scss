@@ -1,3 +1,8 @@
+#mikeauerbach-header {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
 .navbar-lewagon {
   justify-content: center;
   background: white;
@@ -8,40 +13,39 @@
   a {
   color: $gray;
   opacity: 0.8;
-  &:hover {
-    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
+.nav-link{
+    display: flex;
+}
+
+.navbar-link {
+  padding: 0 1rem;
 }
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
-  justify-content: start;
+}
+.navbar-collapse {
+  justify-self: flex-end;
 }
 
 // .navbar-lewagon .navbar-brand img {
 //   width: 40px;
 // }
-.navbar-toggler {
-  // position: fixed;
-  // top: 92vh;
-  // left: 83vw;
-  // background: white;
-  // z-index: 2;
-}
 
-.nav-link{
-  display: flex;
-  a {
-    padding: 0 15px;
-  }
-}
 
 // .navbar-expand-sm[aria-expanded="false"] {
-//   justify-content: start;
-// }
-
-#mikeauerbach-header {
-  font-size: 1.5rem;
-  padding-left: 0.5rem;
-}
+  //   justify-content: flex-end;
+  // }
+  
+  .navbar-toggler {
+    // position: fixed;
+    // top: 92vh;
+    // left: 83vw;
+    // background: white;
+    // z-index: 2;
+  }

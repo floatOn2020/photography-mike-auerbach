@@ -39,10 +39,10 @@ main.gallery {
 }
 
 /* This will create 3x images every 8 elements */
-.my-cat-card:nth-child(6n) {
-  grid-column: span 3;
-  grid-row: span 3;
-}
+// .my-cat-card:nth-child(6n) {
+//   grid-column: span 3;
+//   grid-row: span 3;
+// }
 
 .my-cat-card-div {
   height: 100%;
