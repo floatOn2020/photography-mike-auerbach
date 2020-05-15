@@ -2,12 +2,12 @@
   <div class="car row ">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner " >
-        <div class="carousel-item active ">
-          <%= cl_image_tag @shooting.photos[0].key%>
+        <div class="carousel-item active carou-item">
+          <%= cl_image_tag @shooting.photos[0].key, {class: "carou-img"}%>
         </div>
-        <% @shooting.photos.each do |photo|%>
-          <div class="carousel-item item">
-            <%= cl_image_tag photo.key, {class: "h-70"}%>
+        <% @shooting.photos[1..-1].each do |photo|%>
+          <div class="carousel-item item carou-item">
+            <%= cl_image_tag photo.key, {class: "carou-img"}%>
           </div>
         <% end %>
       </div>
