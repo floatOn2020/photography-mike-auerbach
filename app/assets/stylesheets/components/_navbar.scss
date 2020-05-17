@@ -1,13 +1,18 @@
-#mikeauerbach-header {
-  font-size: 1.5rem;
-  padding-left: 0.5rem;
-}
-
 .navbar-lewagon {
-  // justify-content: center;
+  padding: .8rem 0 0 .5rem;
   background: white;
   margin-top: -20px;
+  align-items: flex-end;
+  button {
+    margin-bottom: 15px;
+    margin-right: .5rem;
+    margin-left: auto;
+  }
 }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
 
 .hoverable {
   a {
@@ -19,34 +24,23 @@
   }
 }
 
-.nav-link{
-    display: flex;
-}
-
 .navbar-link {
-  padding: 0 1rem;
+  // padding: 0 1rem;
+  margin-left: auto;
+  font-size: 1.3rem;
+}
+.name{
+  margin-bottom: auto;
+}
+#mikeauerbach-header {
+  font-size: 2rem;
+  padding-left: 0.5rem;
   margin-left: auto;
 }
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.oben {
+  margin-bottom: -20px;
+  letter-spacing: 0.1rem;
 }
-// .navbar-collapse {
-//   justify-self: flex-end;
-// }
-
-// .navbar-lewagon .navbar-brand img {
-//   width: 40px;
-// }
-
-
-// .navbar-expand-sm[aria-expanded="false"] {
-  //   justify-content: flex-end;
-  // }
-  
-  .navbar-toggler {
-    // position: fixed;
-    // top: 92vh;
-    // left: 83vw;
-    // background: white;
-    // z-index: 2;
-  }
+.unten {
+  margin-top: -19px;
+}
