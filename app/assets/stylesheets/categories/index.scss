@@ -1,60 +1,85 @@
-/*GALLERY*/
-main.gallery {
-  padding: 2rem;
-}
-
-.gallery > h1 {
-  font-size: 3rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin-bottom: 1rem;
-  color: #333333;
-  font-weight: 100;
-}
-
-.gallery > .gallery__list {
+.cont {
+  font-size: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-auto-rows: 200px;
-  grid-gap: 0.5rem;
-  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  // grid-template-rows: repeat(auto-fill, minmax(250px, 300px));
+  grid-gap: .5em .5em;
+}
+.category-card {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
 }
 
-.my-cat-card {
-  list-style: none;
-  a {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-  }
+.category-image {
+  max-width: 100%;
+  height: auto;
+  img {
+      max-width: 100%;
+      max-height: auto;
+      object-fit: cover;
+
+    }
 }
 
-/* This will create 2x images every 4 elements */
-.my-cat-card:nth-child(3n) {
-  grid-column: span 2; /* Spans two columns */
-  grid-row: span 2; /* Spans two rows */
-}
 
-/* This will create 3x images every 8 elements */
-// .my-cat-card:nth-child(6n) {
-//   grid-column: span 3;
-//   grid-row: span 3;
+// /*GALLERY*/
+// main.gallery {
+//   padding: 2rem;
 // }
 
-.my-cat-card-div {
-  height: 100%;
-}
-.my-cat-card-name {
-  position: absolute;
-    color: white;
-  font-size: 1.6rem;
-}
+// .gallery > h1 {
+//   font-size: 3rem;
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//   margin-bottom: 1rem;
+//   color: #333333;
+//   font-weight: 100;
+// }
 
-.my-cat-card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+// .gallery > .gallery__list {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+//   grid-template-rows: repeat(6, 200px);
+//   grid-gap: 0.5rem;
+//   grid-auto-flow: dense;
+// }
+
+// .my-cat-card {
+//   list-style: none;
+//   a {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     position: relative;
+//     justify-content: center;
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+// /* This will create 2x images every 4 elements */
+// .my-cat-card:nth-child(3n) {
+//   grid-column: span 2; /* Spans two columns */
+//   grid-row: span 2; /* Spans two rows */
+// }
+
+// /* This will create 3x images every 8 elements */
+// // .my-cat-card:nth-child(6n) {
+// //   grid-column: span 3;
+// //   grid-row: span 3;
+// // }
+
+// .my-cat-card-div {
+//   height: 100%;
+// }
+// .my-cat-card-name {
+//   position: absolute;
+//     color: white;
+//   font-size: 1.6rem;
+// }
+
+// .my-cat-card-image {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
