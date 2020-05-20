@@ -2,17 +2,16 @@
 <main class="">
     <div class="cont">
       <% @categories.each do |category|%>
-          <div class="category-card">
-        <%= link_to category_path(category), class: "" do %>
-            <figure class="category-image">
-              <%= cl_image_tag category.cover.key,:class => ""%>
-            </figure>
-            <figcaption class=""> <%= category.name %> </figcaption>
-        <% end %>
+        <%= link_to category_path(category), class: "category-card-link" do %>
+          <div class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(category.cover) %>)">
+            <h1 class="category-name"> <%= category.name%></h1>
           </div>
+        <% end %>
       <% end %>
     </div>
   </main>
+
+
 <%# <main class="gallery">
     <ul class="gallery__list">
       <%# @categories.each do |category|%>
@@ -26,4 +25,4 @@
           <%# </li> %>
       <%# end %>
     <%# </ul> %>
-  <%# </main> %> 
+  <%# </main> %>

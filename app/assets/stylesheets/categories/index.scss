@@ -1,19 +1,39 @@
 .cont {
   font-size: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  // grid-template-rows: repeat(auto-fill, minmax(250px, 300px));
-  grid-gap: .5em .5em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: .3em .3em;
+  grid-auto-flow: dense;
+
+}
+.category-card-link {
+  :hover {
+    background-image: grey;
+  }
 }
 .category-card {
-  width: 20rem;
-  height: 20rem;
-  overflow: hidden;
+  max-width: 100%;
+  min-height: 250px;
+  min-width: 250px;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  color: white;
+  font-size: 1.6rem;
+    :hover {
+
+  }
 }
+// .category-card:nth-child(3n) {
+//   grid-column: span 2; /* Spans two columns */
+//   grid-row: span 2; /* Spans two rows */
+// }
+
 
 .category-image {
   max-width: 100%;
-  height: auto;
+  min-height: 100%;
+  object-fit: cover;
   img {
       max-width: 100%;
       max-height: auto;
@@ -22,27 +42,12 @@
     }
 }
 
+.category-name {
+  justify-self: center;
+  align-self: center;
+}
 
-// /*GALLERY*/
-// main.gallery {
-//   padding: 2rem;
-// }
 
-// .gallery > h1 {
-//   font-size: 3rem;
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-//   margin-bottom: 1rem;
-//   color: #333333;
-//   font-weight: 100;
-// }
-
-// .gallery > .gallery__list {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-//   grid-template-rows: repeat(6, 200px);
-//   grid-gap: 0.5rem;
-//   grid-auto-flow: dense;
-// }
 
 // .my-cat-card {
 //   list-style: none;

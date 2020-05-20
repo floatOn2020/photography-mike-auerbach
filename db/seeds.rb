@@ -17,7 +17,7 @@ people = Category.create(name: "People")
 file = URI.open('https://res.cloudinary.com/dovtq7cpo/image/upload/v1585660483/ndo0vlg1o2v9noh1wxu6.jpg')
 people.cover.attach(io: file, filename: 'people.jpg', content_type: 'image/jpg')
 
-interieur = Category.create(name: "Design / Interieur")
+interieur = Category.create(name: "Design & Interieur")
 file = URI.open('https://res.cloudinary.com/dovtq7cpo/image/upload/v1585660507/w9ht95iw3gzcgqag9irm.jpg')
 interieur.cover.attach(io: file, filename: 'interieur.jpg', content_type: 'image/jpg')
 
