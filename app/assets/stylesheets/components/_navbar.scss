@@ -3,18 +3,24 @@
   background: white;
   margin-top: -20px;
   align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
 }
 // menu
-.nav-link {
-  display: inline;
-}
 .link-div {
-  margin-right: .8rem;
+  margin-right: 1rem;
+  font-weight: light;
 }
 
 .navbar-lewagon button {
   margin-right: 0;
   margin-bottom: .8rem;
+}
+
+.navbar-link {
+  display: inline;
+  margin-left: auto;
+  font-size: 1.3rem;
 }
 
 .navbar-toggler {
@@ -32,16 +38,13 @@
   }
 }
 
-.navbar-link {
-  margin-left: auto;
-  font-size: 1.3rem;
-}
-.name{
-  margin-bottom: auto;
-}
+//
 #mikeauerbach-header {
   font-size: 2rem;
   padding-left: 0.5rem;
+}
+.name{
+  margin-bottom: auto;
 }
 .oben {
   margin-bottom: -20px;

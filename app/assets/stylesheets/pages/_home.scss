@@ -4,7 +4,7 @@
 a {
   text-decoration: none !important;
 }
-.backgr {
+#backgr {
   margin: 0;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('home-background.jpg');
   background-repeat: no-repeat;
@@ -14,12 +14,6 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  &:hover {
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(255,255,255,0.4)), url('home-background.jpg');
-  }
-  &:hover #mikeauerbachhome {
-  font-size: 5.5rem;
-  }
 }
 
 .home-logo {
