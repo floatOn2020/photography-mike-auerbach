@@ -32,14 +32,14 @@
   a {
   color: $gray;
   opacity: 0.8;
-    &:hover {
-      opacity: 1;
-    }
+    // &:hover {
+    //   opacity: 1;
+    // }
   }
 }
 
 //
-#mikeauerbach-header {
+.header-name {
   font-size: 2rem;
   padding-left: 0.5rem;
 }

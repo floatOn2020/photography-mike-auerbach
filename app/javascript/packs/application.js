@@ -4,8 +4,10 @@ require("channels")
 
 import "bootstrap";
 import { hoverHome } from './homepage-hover.js';
+import { hoverLogo } from './logo-hover.js';
 
 // import { initAutocomplete } from '../plugins/init_mapbox';
 
 
 hoverHome();
+hoverLogo();
