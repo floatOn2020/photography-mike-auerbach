@@ -13,42 +13,44 @@ class CategoriesController < ApplicationController
   end
 
   def filter_categories_for_links
-    @category = Category.where(category: "#{params[:query]}")
+    # link = params[:go_to]
+    # @categories = Category.where(category: "People")
+    # render :index
   end
 
-  def new
-    @category = Category.new
-  end
+  # def new
+  #   @category = Category.new
+  # end
 
-  def create
-    @category = Category.new(category_params)
-    if @category.save!
-      redirect_to categories_path
-    else
-      render :new
-    end
-  end
+  # def create
+  #   @category = Category.new(category_params)
+  #   if @category.save!
+  #     redirect_to categories_path
+  #   else
+  #     render :new
+  #   end
+  # end
 
-  def edit; end
+  # def edit; end
 
-  def update
-    if @category.update(category_params)
-      redirect_to categories_path
-    else
-      render :edit
-    end
-  end
+  # def update
+  #   if @category.update(category_params)
+  #     redirect_to categories_path
+  #   else
+  #     render :edit
+  #   end
+  # end
 
 
-  def destroy
-    @category.destroy
-    redirect_to categories_path
+  # def destroy
+  #   @category.destroy
+  #   redirect_to categories_path
 
-    # respond_to do |format|
-    #   format.html { render 'dashboard/goals' }
-    #   format.js  { render :layout => false }
-    # end
-  end
+  #   # respond_to do |format|
+  #   #   format.html { render 'dashboard/goals' }
+  #   #   format.js  { render :layout => false }
+  #   # end
+  # end
 
   private
 
