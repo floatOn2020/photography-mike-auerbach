@@ -1,0 +1,84 @@
+<div class="navbar navbar-expand-md navbar-light navbar-lewagon ">
+  <!-- this is the burger-menu -->
+  <div class="hoverable name">
+    <%= link_to "PHOTOGRAPHY", categories_path, class: "navbar-brand oben header-name" %>
+    <br>
+    <%= link_to "MIKE AUERBACH", categories_path, class: "navbar-brand unten header-name" %>
+  </div>
+  <div class="link-div">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon dropdown-menu-right"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="nav-ul" class="navbar-nav hoverable">
+          <li class="navbar-link">
+            <%= link_to "Home", categories_path, class: "nav-link dropdown-menu-right" %>
+          </li>
+          <% Category.all.each do |category|%>
+            <li class="navbar-link">
+              <%= link_to category.name, category_path(category), class: "nav-link" %>
+            </li>
+          <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+.navbar-lewagon {
+  padding: .8rem 0 0 .5rem;
+  background: white;
+  margin-top: -20px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+// menu
+.link-div {
+  margin-top: 15px;
+  margin-right: 5px;
+  font-weight: light;
+  text-align: end;
+}
+
+.navbar-lewagon button {
+  margin-right: 0;
+  margin-bottom: 1.8rem;
+}
+.nav-link{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.navbar-link {
+  display: inline;
+  font-size: 1.3rem;
+  // padding: 0 calc(4px + 1vw) 0 calc(4px + 1vw);
+}
+
+.navbar-toggler {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+.hoverable {
+  a {
+  color: $gray;
+  opacity: 0.8;
+  }
+}
+
+//
+.header-name {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+}
+.name{
+  margin-bottom: auto;
+}
+.oben {
+  margin-bottom: -20px;
+  letter-spacing: 0.1rem;
+}
+.unten {
+  margin-top: -19px;
+}
+

@@ -1,25 +1,26 @@
-<div class="navbar navbar-expand-md navbar-light navbar-lewagon ">
-  <!-- this is the burger-menu -->
-  <div class="hoverable name">
+<nav id='my-nav'>
+
+  <div id="left" class="hoverable name">
     <%= link_to "PHOTOGRAPHY", categories_path, class: "navbar-brand oben header-name" %>
     <br>
     <%= link_to "MIKE AUERBACH", categories_path, class: "navbar-brand unten header-name" %>
   </div>
-  <div class="link-div">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon dropdown-menu-right"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto hoverable">
-          <li class="navbar-link">
-            <%= link_to "Home", categories_path, class: "nav-link dropdown-menu-right" %>
-          </li>
+
+  <div id="right">
+    <div class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
           <% Category.all.each do |category|%>
-            <li class="navbar-link">
+            <li class="nav-item">
               <%= link_to category.name, category_path(category), class: "nav-link" %>
             </li>
           <% end %>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+
+</nav>

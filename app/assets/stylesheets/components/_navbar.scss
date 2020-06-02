@@ -1,31 +1,20 @@
-.navbar-lewagon {
-  padding: .8rem 0 0 .5rem;
-  background: white;
-  margin-top: -20px;
-  align-items: flex-end;
+/*
+Positioning
+Box model
+Typographic
+Visual
+Misc
+*/
+
+// logo and nav-links
+#my-nav {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-}
-// menu
-.link-div {
-  margin-right: 1rem;
-  font-weight: light;
 }
 
-.navbar-lewagon button {
-  margin-right: 0;
-  margin-bottom: .8rem;
-}
-
-.navbar-link {
-  display: inline;
-  margin-left: auto;
-  font-size: 1.3rem;
-}
-
-.navbar-toggler {
-  display: block;
-  margin: 0 0 0 auto;
+.navbar {
+  height: 100%;
+  align-items: flex-end;
 }
 
 .hoverable {
@@ -35,14 +24,38 @@
   }
 }
 
-//
+// the actual nav links
+.navbar-toggler {
+  margin: 0 .5rem .6rem 0;
+}
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+    li {
+      padding: 0 1.5rem 0 1.5rem;
+      margin-right: -1rem;
+    }
+
+}
+#right {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+// logo on the left of the navbar
 .header-name {
   font-size: 2rem;
   padding-left: 0.5rem;
 }
-.name{
-  margin-bottom: auto;
-}
+
 .oben {
   margin-bottom: -20px;
   letter-spacing: 0.1rem;
