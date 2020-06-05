@@ -5,32 +5,32 @@ class ShootingsController < ApplicationController
 
   end
 
-  def new
-    @shooting = Shooting.new
-  end
+  # def new
+  #   @shooting = Shooting.new
+  # end
 
-  def create
-    @shooting = Shooting.new(shooting_params)
-    @category = @shooting.category
+  # def create
+  #   @shooting = Shooting.new(shooting_params)
+  #   @category = @shooting.category
 
-    if @shooting.save!
-      # @shooting.photos.attach(params[:photos])
-      redirect_to category_path(@shooting.category)
-    else
-      render :new
-    end
-  end
+  #   if @shooting.save!
+  #     # @shooting.photos.attach(params[:photos])
+  #     redirect_to category_path(@shooting.category)
+  #   else
+  #     render :new
+  #   end
+  # end
 
-  def edit; end
+  # def edit; end
 
-  def update
-    @shooting = Shooting.new(shooting_params)
-    if @shooting.update(shooting_params)
-      redirect_to category_path(@shooting.category)
-    else
-      render :edit
-    end
-  end
+  # def update
+  #   @shooting = Shooting.new(shooting_params)
+  #   if @shooting.update(shooting_params)
+  #     redirect_to category_path(@shooting.category)
+  #   else
+  #     render :edit
+  #   end
+  # end
 
 
   # def destroy

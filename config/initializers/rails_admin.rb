@@ -10,11 +10,12 @@ RailsAdmin.config do |config|
 
   config.authorize_with do
     unless current_user.admin?
-      flash[:alert] = 'Wrong credentials.'
+      flash[:alert] = 'Sorry, this is only accessible for admins.'
       redirect_to main_app.root_path
     end
   end
 
+  config.included_models = ['category', 'shooting']
   ## == CancanCan ==
   # config.authorize_with :cancancan
 
