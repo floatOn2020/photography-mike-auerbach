@@ -1,11 +1,9 @@
 <h1>Test, sample images taken from unsplash</h1>
-
-<h1>Test, sample images taken from unsplash</h1>
     <div class="cont">
       <% @shootings.each do |shoot|%>
         <%= link_to shooting_path(shoot), class: "category-card-link" do %>
-          <div class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(category.cover) %>)">
-            <h1 class="category-name"> <%= category.name%></h1>
+          <div class="category-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(shoot.cover) %>)">
+            <h1 class="category-name"> <%= shoot.who_or_what%></h1>
           </div>
         <% end %>
       <% end %>

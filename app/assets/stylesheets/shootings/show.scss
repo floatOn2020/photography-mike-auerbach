@@ -1,3 +1,6 @@
+.bg {
+  display: flex;
+}
 .carou-item, .active {
     height: 70vh !important;
 }
@@ -5,4 +8,19 @@
   text-align: center;
   max-height: 100%;
   width: auto;
+}
+
+.count-folio {
+  margin-top: 0 !important;
+  a{
+    color: $gray !important;
+  }
+}
+#carouselExampleControls {
+  margin: auto;
+  font-size: 2rem;
+}
+#carou-image {
+  height: 100%;
+  display: inline !important;
 }
