@@ -13,6 +13,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+            <li class="nav-item">
+              <%= link_to 'Home', categories_path, class: "nav-link" %>
+            </li>
           <% Category.all.each do |category|%>
             <li class="nav-item">
               <%= link_to category.name, category_path(category), class: "nav-link" %>

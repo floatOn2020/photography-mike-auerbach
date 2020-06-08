@@ -25,6 +25,10 @@ various = Category.create(name: "Various")
 file = URI.open('https://res.cloudinary.com/dovtq7cpo/image/upload/v1585660838/sacnpdmktqsyg0qtyqof.jpg')
 various.cover.attach(io: file, filename: 'various.jpg', content_type: 'image/jpg')
 
+film = Category.create(name: "Film")
+file = URI.open('https://res.cloudinary.com/dovtq7cpo/image/upload/v1591600528/photo-1485846234645-a62644f84728_ic5fxz.jpg')
+film.cover.attach(io: file, filename: 'film.jpg', content_type: 'image/jpg')
+
 puts "created #{Category.count} categories"
 
 
