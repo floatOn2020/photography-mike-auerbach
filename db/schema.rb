@@ -97,13 +97,6 @@ ActiveRecord::Schema.define(version: 2020_06_04_074904) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "photos", force: :cascade do |t|
-    t.bigint "shootings_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["shootings_id"], name: "index_photos_on_shootings_id"
-  end
-
   create_table "shootings", force: :cascade do |t|
     t.string "who_or_what"
     t.string "place"
@@ -128,6 +121,5 @@ ActiveRecord::Schema.define(version: 2020_06_04_074904) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "photos", "shootings", column: "shootings_id"
   add_foreign_key "shootings", "categories"
 end
