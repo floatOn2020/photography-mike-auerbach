@@ -1,26 +1,6 @@
-.my-carousel-wrapper {
-  display: flex;
-  height: 77vh;
-}
 
-.my-carousel-wrapper * {
-  box-sizing: border-box;
-}
 
-.my-carousel {
-  // text-align: center;
-  transform-style: preserve-3d;
-  margin: auto;
-}
-
-// .my-carousel-item {
-//     height: 70vh !important;
-// }
-.my-carousel-image {
-  opacity: 0;
-  position: absolute;
-  top:0;
-  max-height: 77vh;
+#carouselExampleControls {
   margin: auto;
   padding: 1rem 4rem;
   z-index: 100;
@@ -29,45 +9,10 @@
   // width: auto;
 }
 
-.my-carousel-image.initial,
-.my-carousel-image.active {
-  opacity: 1;
-  position: relative;
-  z-index: 900;
-}
+#carou-image {
+  height: 77vh;
+  margin: auto;
 
-.my-carousel-image.prev,
-.my-carousel-image.next {
-  z-index: 800;
-}
-.my-carousel-image.prev {
-  transform: translateX(-100%); /* Move 'prev' item to the left */
-}
-.my-carousel-image.next {
-  transform: translateX(100%); /* Move 'next' item to the right */
-}
-
-
-.my-carousel-button-prev,
-.my-carousel-button-next {
-  position: absolute;
-  top:50%;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem;
-  background-color: #FFF;
-  transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 1001; /* Sit on top of everything */
-}
-.my-carousel-button-prev {
-  right:0;
-  top: 47%;
-}
-
-.my-carousel-button-next {
-  right:0;
-  top: 53%
 }
 
 // .my-carousel-button-prev::after,
