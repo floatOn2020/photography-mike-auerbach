@@ -1,26 +1,106 @@
-.bg {
+.my-carousel-wrapper {
   display: flex;
-}
-.carou-item, .active {
-    height: 70vh !important;
-}
-.carou-img {
-  text-align: center;
-  max-height: 100%;
-  width: auto;
+  height: 77vh;
 }
 
-.count-folio {
-  margin-top: 0 !important;
-  a{
-    color: $gray !important;
-  }
+.my-carousel-wrapper * {
+  box-sizing: border-box;
 }
-#carouselExampleControls {
+
+.my-carousel {
+  // text-align: center;
+  transform-style: preserve-3d;
   margin: auto;
-  font-size: 2rem;
 }
-#carou-image {
-  height: 100%;
-  display: inline !important;
+
+// .my-carousel-item {
+//     height: 70vh !important;
+// }
+.my-carousel-image {
+  opacity: 0;
+  position: absolute;
+  top:0;
+  max-height: 77vh;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+  // max-height: 100%;
+  // width: auto;
 }
+
+.my-carousel-image.initial,
+.my-carousel-image.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.my-carousel-image.prev,
+.my-carousel-image.next {
+  z-index: 800;
+}
+.my-carousel-image.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+.my-carousel-image.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+
+
+.my-carousel-button-prev,
+.my-carousel-button-next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1001; /* Sit on top of everything */
+}
+.my-carousel-button-prev {
+  right:0;
+  top: 47%;
+}
+
+.my-carousel-button-next {
+  right:0;
+  top: 53%
+}
+
+// .my-carousel-button-prev::after,
+// .my-carousel-button-next::after {
+//   content: " ";
+//   position: absolute;
+//   width: 10px;
+//   height: 10px;
+//   top: 50%;
+//   left: 54%;
+//   transform: translate(-50%, -50%) rotate(135deg);
+// }
+// .my-carousel-button-next::after {
+//   left: 47%;
+//   transform: translate(-50%, -50%) rotate(-45deg);
+// }
+
+
+
+///////my old code///////////////
+// .active {
+//   display: block;
+// }
+
+// #carouselExampleControls {
+//   margin: auto;
+//   font-size: 2rem;
+// }
+// .carou-image {
+//   height: 100%;
+//   display: inline !important;
+// }
+// .carousel-control-next {
+//   height: 70vh;
+//   top: 110px;
+// }
