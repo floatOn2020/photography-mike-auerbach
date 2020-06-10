@@ -12,40 +12,25 @@
 #carou-image {
   height: 77vh;
   margin: auto;
-
 }
 
-// .my-carousel-button-prev::after,
-// .my-carousel-button-next::after {
-//   content: " ";
-//   position: absolute;
-//   width: 10px;
-//   height: 10px;
-//   top: 50%;
-//   left: 54%;
-//   transform: translate(-50%, -50%) rotate(135deg);
-// }
-// .my-carousel-button-next::after {
-//   left: 47%;
-//   transform: translate(-50%, -50%) rotate(-45deg);
-// }
-
-
-
-///////my old code///////////////
-// .active {
-//   display: block;
-// }
-
-// #carouselExampleControls {
-//   margin: auto;
-//   font-size: 2rem;
-// }
-// .carou-image {
-//   height: 100%;
-//   display: inline !important;
-// }
-// .carousel-control-next {
-//   height: 70vh;
-//   top: 110px;
-// }
+.carousel-control-next {
+  height: 50%;
+  top: 0;
+  align-items: flex-end;
+  padding-bottom: 8px;
+}
+// carousel-control-prev has a left: 0 which i have to override with right:0, but this doesn't work
+.carousel-control-prev {
+  height: 50%;
+  right: 0 !important;
+  bottom: 0 !important;
+  top: 50%;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+.fa-chevron-left:before,
+.fa-chevron-right:before {
+    color: black;
+    opacity: 1;
+  }
