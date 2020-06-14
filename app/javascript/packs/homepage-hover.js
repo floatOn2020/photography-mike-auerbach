@@ -14,5 +14,3 @@ const hoverHome = () => {
   }
 
 };
-
-export { hoverHome };

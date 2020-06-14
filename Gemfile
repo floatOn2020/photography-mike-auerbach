@@ -34,4 +34,3 @@ end
 
 # what I added to LW standard config
 gem 'cloudinary', '~> 1.12.0'
-

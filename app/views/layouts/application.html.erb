@@ -8,6 +8,7 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
     <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
@@ -22,7 +23,5 @@
       </div>
       <%= render 'shared/footer' %>
     </div>
-
-    <%= javascript_pack_tag 'application' %>
   </body>
 </html>

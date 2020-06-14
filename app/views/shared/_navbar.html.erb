@@ -1,9 +1,11 @@
 <nav id='my-nav'>
 
   <div id="left" class="hoverable name">
-    <%= link_to "PHOTOGRAPHY", categories_path, class: "navbar-brand oben header-name" %>
-    <br>
-    <%= link_to "MIKE AUERBACH", categories_path, class: "navbar-brand unten header-name" %>
+    <%= link_to categories_path, class: "navbar-brand header-name" do %>
+      <p class="oben">PHOTOGRAPHY</p>
+      <br>
+      <p class="unten">MIKE AUERBACH </p>
+    <%end%>
   </div>
 
   <div id="right">

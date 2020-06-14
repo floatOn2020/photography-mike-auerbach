@@ -9,13 +9,12 @@ RailsAdmin.config do |config|
   config.current_user_method(&:current_user)
 
   config.authorize_with do
-    unless current_user.admin?
-      flash[:alert] = 'Sorry, this is only accessible for admins.'
-      redirect_to main_app.root_path
-    end
+  unless current_user.admin?
+    flash[:alert] = 'Sorry, no admin access for you.'
+    redirect_to main_app.root_path
   end
+end
 
-  config.included_models = ['category', 'shooting']
   ## == CancanCan ==
   # config.authorize_with :cancancan
 
