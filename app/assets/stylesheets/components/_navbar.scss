@@ -13,8 +13,8 @@ Misc
 }
 
 .navbar {
-  height: 100%;
   align-items: flex-end;
+  height: 100%;
 }
 
 // the actual nav links
@@ -23,8 +23,8 @@ Misc
 }
 ul {
   display: flex;
-  width: 100%;
   justify-content: center;
+  width: 100%;
     li {
       padding: 0 1.2rem 0 1.2rem;
       margin-right: -1rem;
@@ -49,16 +49,21 @@ li:hover {
 
 // logo on the left of the navbar
 .header-name {
+  padding-left: 1.5rem;
   font-size: 2.5rem;
-  padding-left: 0.5rem;
   color: $gray;
-  margin-bottom: 0;
 }
 
 .oben {
-  margin-bottom: -67px;
+  position: absolute;
+  top: 15px;
+  margin-bottom: -20px;
   letter-spacing: 0.1rem;
 }
 .unten {
-  margin-top: -10px;
+  margin-top: -19px;
+}
+
+p {
+  margin-bottom: 0 !important;
 }

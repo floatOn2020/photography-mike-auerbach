@@ -1,3 +1,42 @@
-.my-cat-card {
-  box-shadow: 0 4px 14px 0 hsla(0, 0%, 0%, 0.2);
+// .my-cat-card {
+//   box-shadow: 0 4px 14px 0 hsla(0, 0%, 0%, 0.2);
+// }
+.wrapper {
+}
+.shoot-cont {
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: .1em .1em;
+  grid-auto-flow: dense;
+  margin-left: 10px;
+}
+
+.shoot-card {
+  position: relative;
+  padding-bottom: 125%;
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
+  max-width: 100%;
+  min-height: 250px;
+  min-width: 250px;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  color: white;
+  font-size: 1.6rem;
+    :hover {
+
+  }
+}
+
+.category-card-link:nth-of-type(3n) {
+  grid-column: span 2; /* Spans two columns */
+  grid-row: span 2; /* Spans two rows */
+}
+
+.shoot-name {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
 }

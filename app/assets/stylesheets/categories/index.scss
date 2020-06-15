@@ -6,12 +6,10 @@
   grid-auto-flow: dense;
   margin-left: 10px;
 }
-.category-card-link {
-  :hover {
 
-  }
-}
 .category-card {
+  position: relative;
+  padding-bottom: 100%;
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
   max-width: 100%;
   min-height: 250px;
@@ -25,12 +23,14 @@
 
   }
 }
-.category-card:nth-child(3n) {
+.category-card-link:nth-of-type(3n) {
   grid-column: span 2; /* Spans two columns */
   grid-row: span 2; /* Spans two rows */
 }
 
 .category-name {
-  justify-self: center;
-  align-self: center;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
 }
