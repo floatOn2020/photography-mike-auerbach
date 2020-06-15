@@ -29,7 +29,7 @@
   }
 }
 
-.shoot-card:nth-child(3n) {
+.category-card-link:nth-of-type(3n) {
   grid-column: span 2; /* Spans two columns */
   grid-row: span 2; /* Spans two rows */
 }
