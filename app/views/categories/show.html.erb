@@ -2,8 +2,12 @@
 <div class="shoot-cont">
   <% @shootings.each do |shoot|%>
     <%= link_to shooting_path(shoot), class: "category-card-link" do %>
-      <div class="shoot-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(shoot.cover) %>)">
-        <div class="shoot-name"> <%= shoot.who_or_what%></div>
+      <div class="shoot-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(shoot.cover) %>); :hover {background-image: linear-gradient(rgba(0,255,0,0.2), rgba(0,255,0,0.3)), url(<%=url_for(shoot.cover) %>)};">
+
+        <div class="shoot-name">
+          <div class="name-text">
+            <%= shoot.who_or_what%></div>
+          </div>
       </div>
     <% end %>
   <% end %>

@@ -3,9 +3,9 @@ require("@rails/activestorage").start()
 require("channels")
 
 import "bootstrap";
-// import { hoverLogo } from './logo-hover.js';
+import { cardsHover } from './cards-hover.js';
 
 // import { initAutocomplete } from '../plugins/init_mapbox';
 
 
-// hoverLogo();
+cardsHover();
