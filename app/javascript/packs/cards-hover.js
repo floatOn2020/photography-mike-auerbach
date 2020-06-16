@@ -1,5 +1,5 @@
 const cardsHover = () => {
-  const cards = document.querySelectorAll(".shoot-card");
+  const cards = document.querySelectorAll(".hoverable-card");
   if(cards){
     cards.forEach((card) => {
       card.addEventListener('mouseover', () => {
