@@ -9,6 +9,7 @@ const cardsHover = () => {
         backgroundImageArray[52] = '8';
         card.style.background = backgroundImageArray.join('');
         card.style.backgroundSize = 'cover';
+        card.style.backgroundPosition = 'center';
       });
       card.addEventListener('mouseout', () => {
         let backgroundImageArray = card.style.backgroundImage.split('');
@@ -17,6 +18,8 @@ const cardsHover = () => {
         backgroundImageArray[52] = '3';
         card.style.background = backgroundImageArray.join('');
         card.style.backgroundSize = 'cover';
+        card.style.backgroundPosition = 'center';
+
       })
     });
   }
