@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Professional pictures of you or your product.">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Mike Auerbach Photography</title>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-    <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-  </head>
-  <body>
-    <div id="page-container">
-      <%= render 'shared/navbar' %>
-      <%= render 'shared/flashes' %>
-      <div class="content">
-        <div id="content-wrap">
-          <%= yield %>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Professional pictures of you or your product.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Mike Auerbach Photography</title>
+      <%= csrf_meta_tags %>
+      <%= action_cable_meta_tag %>
+      <%= stylesheet_link_tag 'application', media: 'all' %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+      <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+      <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    </head>
+    <body>
+      <div id="page-container">
+        <%= render 'shared/navbar' %>
+        <%= render 'shared/flashes' %>
+        <div class="content">
+          <div id="content-wrap">
+            <%= yield %>
+          </div>
+
         </div>
+        <%= render 'shared/footer' %>
       </div>
-      <%= render 'shared/footer' %>
-    </div>
-  </body>
+    </body>
 </html>
