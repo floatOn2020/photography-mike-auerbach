@@ -12,14 +12,18 @@ Misc
   display: flex;
   justify-content: space-between;
   margin-bottom: -0.8em;
+  font-family: $logo-font;
 }
 
 // logo on the left of the navbar
 .my-header__logo {
   padding-left: 1.5rem;
   font-size: 2.8rem;
-  color: $gray;
-  white-space: nowrap
+  color: $black;
+  white-space: nowrap;
+  &:hover {
+    color: $black;
+  }
 }
 
 .logo__oben {
@@ -37,6 +41,12 @@ Misc
 .my-header__nav {
   display: flex;
   width: 100%;
+  font-family: $headers-font2;
+  font-weight: 100;
+  a {
+    color: $dark-grey;
+  }
+  font-size: 0.8em;
 }
 
 @media (max-width: 800px) {
@@ -45,7 +55,7 @@ Misc
   }
   .my-nav__list {
     display: block;
-    background: red;
+    background: $red;
   }
 }
 
@@ -61,7 +71,6 @@ Misc
 
 }
 
-<<<<<<< HEAD
 // navigation list
 
 .my-nav {
@@ -69,34 +78,53 @@ Misc
   width: 100%;
   margin-top: -0.8em;
   margin-bottom: -0.7em;
-=======
-// logo on the left of the navbar
-.header-name {
-  padding-left: 1.5rem;
-  font-size: 2.5rem;
-  color: $black;
->>>>>>> 0d548165c39725425a1f7cbb3759b7b950bd392f
 }
 
 .my-nav__list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-end;
+  padding-top: .5em;
+  padding-bottom: .7em;
   height: 100%;
-  padding-top: 2em;
   font-size: 1.45rem;
 }
 
 .my-nav__item {
-  padding: 0 1.4em 0 1.4em;
+  padding: 0 .8em 0 .8em;
   list-style: none;
+  transition-timing-function: ease-in;
+  a:hover {
+    color: $black;
+    text-decoration: underline !important;
+    // color: $dark-red;
+    // text-shadow: 1px 1px 1px yellow;
+  }
+}
+
+.my-nav__link {
+  z-index: 2;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 38%;
+    background-color: yellow;
+    z-index: -1;
+    opacity: 0.3;
+      // -webkit-transition: all .1s linear;
+  }
 }
 
 
-
-li:hover {
-  text-decoration: underline !important;
-}
+// li:hover {
+//   text-decoration: underline !important;
+//   color: $dark-red;
+// }
 
 
 

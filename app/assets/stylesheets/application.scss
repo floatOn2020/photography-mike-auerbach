@@ -35,10 +35,15 @@
   margin: 0 auto;
   min-height: 84vh;
 }
-
-.hoverable a{
-  opacity: 0.6;
+@media (max-width: 576px) {
+  #content-wrap {
+    width: 100%;
+  }
 }
-a:hover {
+
+a {
   opacity: 1;
+  &:hover {
+    opacity: 0.7;
+  }
 }
