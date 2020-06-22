@@ -4,7 +4,7 @@
 }
 // Graphical variables
 @import "config/fonts";
-@import "config/colors";
+@import "config/colors_and_variables";
 @import "config/bootstrap_variables";
 
 // External libraries
@@ -26,7 +26,7 @@
 
 .content {
   padding-top: 1em;
-  border-top: solid lightgray 1px;
+  border-top: solid $lighter-grey 1px;
 }
 
 #content-wrap {

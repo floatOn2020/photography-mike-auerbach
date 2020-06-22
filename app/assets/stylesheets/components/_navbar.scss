@@ -61,6 +61,7 @@ Misc
 
 }
 
+<<<<<<< HEAD
 // navigation list
 
 .my-nav {
@@ -68,6 +69,13 @@ Misc
   width: 100%;
   margin-top: -0.8em;
   margin-bottom: -0.7em;
+=======
+// logo on the left of the navbar
+.header-name {
+  padding-left: 1.5rem;
+  font-size: 2.5rem;
+  color: $black;
+>>>>>>> 0d548165c39725425a1f7cbb3759b7b950bd392f
 }
 
 .my-nav__list {
