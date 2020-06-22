@@ -10,6 +10,7 @@ Misc
 #my-header {
   position: relative;
   display: flex;
+  justify-content: space-between;
   margin-bottom: -0.8em;
 }
 
@@ -36,12 +37,16 @@ Misc
 .my-header__nav {
   display: flex;
   width: 100%;
-  // display: block;
-  // height: 100%;
-  // margin: 0 auto;
-  // text-align: right;
-  // font-size: 1.4rem;
-  // align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+  .my-header__nav {
+    display: block;
+  }
+  .my-nav__list {
+    display: block;
+    background: red;
+  }
 }
 
 // menu toggle for smaller screens
@@ -61,6 +66,8 @@ Misc
 .my-nav {
   height: 100%;
   width: 100%;
+  margin-top: -0.8em;
+  margin-bottom: -0.7em;
 }
 
 .my-nav__list {
