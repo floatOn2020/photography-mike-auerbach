@@ -7,90 +7,125 @@ Misc
 */
 
 // logo and nav-links
-#my-nav {
+#my-header {
   position: relative;
   display: flex;
+  margin-bottom: -0.8em;
 }
 
-.navbar {
-  align-items: flex-end;
-  height: 100%;
+// logo on the left of the navbar
+.my-header__logo {
+  padding-left: 1.5rem;
+  font-size: 2.8rem;
+  color: $gray;
+  white-space: nowrap
 }
-.nav-link {
-    // margin: auto;
-      font-size: 1.2rem;
-      font-family: sans-serif;
-      z-index: 2;
-      position: relative;
-      opacity: 0.8;
-      color: black !important;
-      &::before {
-    content: "";
-      position: absolute;
-      bottom: 5px;
-      left: 0;
-      width: 100%;
-      height: 38%;
-      background-color: tomato;
-      z-index: -1;
-      opacity: 0.3;
-        // -webkit-transition: all .1s linear;
-      }
-    }
-    @media (max-width: 1100px) {
-      .nav-link::before {
-        content: "";
-        position: absolute;
-        background-color: transparent;
-      }
-    }
-        // the actual nav links
-.navbar-toggler {
-  margin: 0 .5rem .6rem 0;
+
+.logo__oben {
+  position: absolute;
+  top: 11px;
+  margin-bottom: -20px;
+  // letter-spacing: 0.1rem;
 }
-ul {
+.logo__unten {
+  margin-top: -19px;
+  font-size: 0.9em;
+}
+
+// nav-menu on the right
+.my-header__nav {
   display: flex;
-  justify-content: center;
   width: 100%;
-    li {
-      padding: 0 1.2rem 0 1.2rem;
-      margin-right: -1rem;
-    }
+  // display: block;
+  // height: 100%;
+  // margin: 0 auto;
+  // text-align: right;
+  // font-size: 1.4rem;
+  // align-items: flex-end;
+}
+
+// menu toggle for smaller screens
+.nav-toggle {
+  position: absolute;
+  height: 50px;
+  right: 0;
+  background: green;
+}
+
+.hamburger {
 
 }
+
+// navigation list
+
+.my-nav {
+  height: 100%;
+  width: 100%;
+}
+
+.my-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 2em;
+  font-size: 1.45rem;
+}
+
+.my-nav__item {
+  padding: 0 1.4em 0 1.4em;
+  list-style: none;
+}
+
+
+
 li:hover {
   text-decoration: underline !important;
 }
 
-#right {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  text-align: right;
-  font-size: 1.4rem;
-}
 
-.navbar-toggler {
-  margin-left: auto;
-}
 
-// logo on the left of the navbar
-.header-name {
-  padding-left: 1.5rem;
-  font-size: 2.5rem;
-  color: $gray;
-}
+// .my-nav__link {
+//     // margin: auto;
+//       font-size: 1.2rem;
+//       font-family: sans-serif;
+//       z-index: 2;
+//       position: relative;
+//       opacity: 0.8;
+//       color: black !important;
+//       &::before {
+//     content: "";
+//       position: absolute;
+//       bottom: 5px;
+//       left: 0;
+//       width: 100%;
+//       height: 38%;
+//       background-color: tomato;
+//       z-index: -1;
+//       opacity: 0.3;
+//         // -webkit-transition: all .1s linear;
+//       }
+//     }
 
-.oben {
-  position: absolute;
-  top: 15px;
-  margin-bottom: -20px;
-  letter-spacing: 0.1rem;
-}
-.unten {
-  margin-top: -19px;
-}
+//     @media (max-width: 1100px) {
+//       .nav-link::before {
+//         content: "";
+//         position: absolute;
+//         background-color: transparent;
+//       }
+//     }
+//         // the actual nav links
+// .navbar-toggler {
+//   margin: 0 .5rem .6rem 0;
+// }
 
-p {
-  margin-bottom: 0 !important;
-}
+
+
+// .navbar-toggler {
+//   margin-left: auto;
+// }
+
+
+// p {
+//   margin-bottom: 0 !important;
+// }
