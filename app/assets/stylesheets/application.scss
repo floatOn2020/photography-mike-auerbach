@@ -33,15 +33,17 @@
   padding-bottom: 3.6rem;
   width: 80%;
   margin: 0 auto;
-  // background: silver;
-  min-height: 77vh;
+  min-height: 84vh;
+}
+@media (max-width: 576px) {
+  #content-wrap {
+    width: 100%;
+  }
+}
 
-  // background: linear-gradient(70deg,white, darkslategray)
-}
-.hoverable a{
-  color: darkslategray;
-  opacity: 0.6;
-}
-a:hover {
+a {
   opacity: 1;
+  &:hover {
+    opacity: 0.7;
+  }
 }

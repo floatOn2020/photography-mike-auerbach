@@ -1,14 +1,15 @@
 .cont {
-  font-size: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: .1em .1em;
   grid-auto-flow: dense;
   margin-left: 10px;
+  font-size: 40px;
 }
 
 .category-card {
   position: relative;
+  display: grid;
   padding-bottom: 100%;
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
   max-width: 100%;
@@ -16,11 +17,11 @@
   min-width: 250px;
   background-position: center;
   background-size: cover;
-  display: grid;
-  color: white;
   font-size: 1.6rem;
-    :hover {
-
+  color: white;
+  &:hover {
+    -webkit-text-stroke: 2px yellow;
+    // text-shadow: 1px 1px 1px yellow;
   }
 }
 @media (min-width: 500px) {
@@ -35,4 +36,6 @@
   width: 100%;
   top: 40%;
   text-align: center;
+  font-family: $headers-font2;
+  font-weight: 400;
 }
