@@ -12,7 +12,7 @@ Misc
   display: flex;
   justify-content: space-between;
   margin-bottom: -0.8em;
-  font-family: $logo-font;
+  font-family: $headers-font2;
 }
 
 // logo on the left of the navbar
@@ -28,8 +28,9 @@ Misc
 
 .logo__oben {
   position: absolute;
-  top: 11px;
+  top: 8px;
   margin-bottom: -20px;
+  letter-spacing: -.5px;
   // letter-spacing: 0.1rem;
 }
 .logo__unten {
@@ -41,7 +42,6 @@ Misc
 .my-header__nav {
   display: flex;
   width: 100%;
-  font-family: $headers-font2;
   font-weight: 400;
   a {
     color: $dark-grey;
