@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   # skip_before_action :authenticate_user!, only: [:home]
 
   def home
+    flash[:alert] = "Work in progress. All images taken from 'unsplash.com'."
     render layout: 'home'
   end
 
