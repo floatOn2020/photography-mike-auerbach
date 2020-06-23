@@ -13,8 +13,9 @@ Misc
   height: 3.6rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  border-top: solid $lighter-grey 1px;
-  background-color: $light-grey;
+  border-top: solid $light-grey 1px;
+  background-color: $lightest-grey;
+  font-family: $logo-font;
 }
 
 .footer-links {
