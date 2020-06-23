@@ -7,7 +7,7 @@ Misc
 */
 
 // logo and nav-links
-#my-header {
+.my-header {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -15,6 +15,56 @@ Misc
   font-family: $nav-font;
   background: $white;
   border-bottom: 1px solid $light-grey;
+}
+@media screen and (max-width: 1080px) {
+  .my-header {
+    min-height: 151px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-header__nav {
+    margin-top: 50px;
+  }
+  .my-header__logo {
+    padding-left: 0 !important;
+    padding-bottom: 10px;
+  }
+  .logo__oben {
+    top: 0;
+  }
+  .logo__unten {
+    margin-top: -24px;
+    margin-bottom: 1.2rem;
+  }
+  .my-nav__list {
+    padding-top: 0 !important;
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .my-header {
+    min-height: 184px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-header__nav {
+    margin-top: 50px;
+  }
+  .my-header__logo {
+    padding-left: 0 !important;
+    padding-bottom: 10px;
+  }
+  .logo__oben {
+    top: 5px;
+  }
+  .logo__unten {
+    margin-top: -24px;
+  }
+  .my-nav__list {
+    padding-top: 0 !important;
+    margin-top: -4rem;
+  }
 }
 
 // logo on the left of the navbar
@@ -51,15 +101,15 @@ Misc
   font-size: 0.8em;
 }
 
-@media (max-width: 800px) {
-  .my-header__nav {
-    display: block;
-  }
-  .my-nav__list {
-    display: block;
-    background: $red;
-  }
-}
+// @media (max-width: 800px) {
+//   .my-header__nav {
+//     display: block;
+//   }
+//   .my-nav__list {
+//     display: block;
+//     background: $red;
+//   }
+// }
 
 // menu toggle for smaller screens
 .nav-toggle {
@@ -120,56 +170,3 @@ Misc
       // -webkit-transition: all .1s linear;
   }
 }
-
-
-// li:hover {
-//   text-decoration: underline !important;
-//   color: $dark-red;
-// }
-
-
-
-// .my-nav__link {
-//     // margin: auto;
-//       font-size: 1.2rem;
-//       font-family: sans-serif;
-//       z-index: 2;
-//       position: relative;
-//       opacity: 0.8;
-//       color: black !important;
-//       &::before {
-//     content: "";
-//       position: absolute;
-//       bottom: 5px;
-//       left: 0;
-//       width: 100%;
-//       height: 38%;
-//       background-color: tomato;
-//       z-index: -1;
-//       opacity: 0.3;
-//         // -webkit-transition: all .1s linear;
-//       }
-//     }
-
-//     @media (max-width: 1100px) {
-//       .nav-link::before {
-//         content: "";
-//         position: absolute;
-//         background-color: transparent;
-//       }
-//     }
-//         // the actual nav links
-// .navbar-toggler {
-//   margin: 0 .5rem .6rem 0;
-// }
-
-
-
-// .navbar-toggler {
-//   margin-left: auto;
-// }
-
-
-// p {
-//   margin-bottom: 0 !important;
-// }
