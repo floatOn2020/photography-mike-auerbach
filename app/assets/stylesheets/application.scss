@@ -21,12 +21,12 @@
 #page-container {
   position: relative;
   min-height: 100vh;
-  background-color: white;
+  margin-top: 0;
+  background-color: $lightest-grey;
 }
 
 .content {
   padding-top: 1em;
-  border-top: solid $lighter-grey 1px;
 }
 
 #content-wrap {

@@ -17,7 +17,6 @@ a {
 
 .home-logo {
   height: 100vh;
-  font-family: $logo-font;
   font-weight: 100;
 }
 
@@ -34,7 +33,7 @@ a {
   text-align: start;
   font-size: 5rem;
   line-height: 0.9;
-  font-family: $logo-font;
+  font-family: $logo-font-home;
   font-weight: 100;
   letter-spacing: 1;
   color: $light-grey;

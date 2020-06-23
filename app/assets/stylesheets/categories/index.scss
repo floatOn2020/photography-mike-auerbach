@@ -18,9 +18,9 @@
   background-position: center;
   background-size: cover;
   font-size: 1.6rem;
-  color: white;
+  color: $lightest-grey;
   &:hover {
-    -webkit-text-stroke: 2px yellow;
+    -webkit-text-stroke: 1px yellow;
     // text-shadow: 1px 1px 1px yellow;
   }
 }
@@ -36,6 +36,6 @@
   width: 100%;
   top: 40%;
   text-align: center;
-  font-family: $headers-font2;
+  font-family: $cards-font;
   font-weight: 400;
 }

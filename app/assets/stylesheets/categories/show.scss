@@ -15,24 +15,26 @@
   // }
 }
 @media (min-width: 500px) {
-  .category-card-link:nth-of-type(3n) {
-    grid-column: span 2; /* Spans two columns */
-    grid-row: span 2; /* Spans two rows */
-  }
+  // .category-card-link:nth-of-type(3n) {
+  //   grid-column: span 2; /* Spans two columns */
+  //   grid-row: span 2; /* Spans two rows */
+  // }
 }
 .shoot-card {
   position: relative;
   padding-bottom: 125%;
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
-  max-width: 100%;
   min-height: 250px;
   min-width: 250px;
   // background-position: center;
   background-size: cover;
   display: grid;
-  color: white;
+  color: $lightest-grey;
   font-size: 1.6rem;
-
+  font-family: $cards-font;
+  &:hover {
+    -webkit-text-stroke: 1px yellow;
+  }
 }
 
 .shoot-name {
