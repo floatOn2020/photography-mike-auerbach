@@ -1,8 +1,12 @@
+.carousel-inner {
+  padding-top: 1em;
+}
+
 #carouselExampleControls {
   margin: auto;
   padding: 1rem 4rem;
   z-index: 100;
-  transition: transform .5s, opacity .5s, z-index .5s;
+  // transition: transform .5s, opacity .5s, z-index .5s;
   // max-height: 100%;
   // width: auto;
 }
@@ -13,22 +17,19 @@
 }
 
 .carousel-control-next {
-  height: 50%;
-  top: 0;
-  align-items: flex-end;
-  padding-bottom: 8px;
+  justify-content: flex-end;
+  width: 50%;
+  opacity: 1 !important;
 }
 // carousel-control-prev has a left: 0 which i have to override with right:0, but this doesn't work
 .carousel-control-prev {
-  height: 50%;
-  right: 0 !important;
-  bottom: 0 !important;
-  top: 50%;
-  align-items: flex-start;
-  padding-top: 8px;
+  justify-content: flex-start;
+  width: 50%;
+  opacity: 1 !important;
 }
 .fa-chevron-left:before,
 .fa-chevron-right:before {
     color: black;
     opacity: 1;
+    font-size: 2.2rem;
   }

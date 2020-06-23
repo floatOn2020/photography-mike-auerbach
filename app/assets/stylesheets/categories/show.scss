@@ -1,12 +1,13 @@
 // .my-cat-card {
 //   box-shadow: 0 4px 14px 0 hsla(0, 0%, 0%, 0.2);
 // }
+
 .wrapper {
 }
 .shoot-cont {
   font-size: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 65vh));
   grid-gap: .1em .1em;
   grid-auto-flow: dense;
   margin-left: 10px;
@@ -24,9 +25,6 @@
   position: relative;
   padding-bottom: 125%;
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
-  min-height: 250px;
-  min-width: 250px;
-  // background-position: center;
   background-size: cover;
   display: grid;
   color: $lightest-grey;
