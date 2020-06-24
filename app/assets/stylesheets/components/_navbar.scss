@@ -16,57 +16,6 @@ Misc
   background: $white;
   border-bottom: 1px solid $light-grey;
 }
-@media screen and (max-width: 1080px) {
-  .my-header {
-    min-height: 151px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .my-header__nav {
-    margin-top: 50px;
-  }
-  .my-header__logo {
-    padding-left: 0 !important;
-    padding-bottom: 10px;
-  }
-  .logo__oben {
-    top: 0;
-  }
-  .logo__unten {
-    margin-top: -24px;
-    margin-bottom: 1.2rem;
-  }
-  .my-nav__list {
-    padding-top: 0 !important;
-    margin-top: -70px;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .my-header {
-    min-height: 184px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .my-header__nav {
-    margin-top: 50px;
-  }
-  .my-header__logo {
-    padding-left: 0 !important;
-    padding-bottom: 10px;
-  }
-  .logo__oben {
-    top: 5px;
-  }
-  .logo__unten {
-    margin-top: -24px;
-  }
-  .my-nav__list {
-    padding-top: 0 !important;
-    margin-top: -4rem;
-  }
-}
-
 // logo on the left of the navbar
 .my-header__logo {
   padding-left: 1.5rem;
@@ -101,23 +50,77 @@ Misc
   font-size: 0.8em;
 }
 
-// @media (max-width: 800px) {
-//   .my-header__nav {
-//     display: block;
-//   }
-//   .my-nav__list {
-//     display: block;
-//     background: $red;
-//   }
-// }
-
 // menu toggle for smaller screens
 .nav-toggle {
+  display: none;
   position: absolute;
   height: 50px;
   right: 0;
   background: green;
 }
+
+//large screens, nav-links breakpoint
+@media screen and (max-width: 1080px) {
+  .my-header {
+    min-height: 151px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-header__nav {
+    margin-top: 50px;
+  }
+  .my-header__logo {
+    padding-left: 0 !important;
+    padding-bottom: 10px;
+  }
+  .logo__oben {
+    top: 0;
+  }
+  .logo__unten {
+    margin-top: -24px;
+    margin-bottom: 1.2rem;
+  }
+  .my-nav__list {
+    padding-top: 0 !important;
+    margin-top: -70px;
+  }
+}
+//medium screens nav-links breakpoint 2
+@media screen and (max-width: 820px) {
+  .my-header {
+    min-height: 184px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-header__nav {
+    margin-top: 50px;
+  }
+  .my-header__logo {
+    padding-left: 0 !important;
+    padding-bottom: 10px;
+  }
+  .logo__oben {
+    top: 0px;
+  }
+  .logo__unten {
+    margin-top: -24px;
+  }
+  .my-nav__list {
+    padding-top: 0 !important;
+    margin-top: -4rem;
+  }
+}
+
+//mobile nav
+@media (max-width: 598px) {
+  .nav-toggle {
+    position: absolute;
+    height: 50px;
+    right: 0;
+    background: green;
+  }
+}
+
 
 .hamburger {
 
