@@ -15,8 +15,9 @@
 // Your CSS partials
 @import "pages/index";
 
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 #page-container {
   position: relative;
