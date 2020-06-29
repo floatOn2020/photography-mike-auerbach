@@ -11,21 +11,13 @@ Misc
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 7rem;
+  height: 100%;
+  margin-bottom: -13px;
   font-family: $nav-font;
   background: $white;
   border-bottom: 1px solid $light-grey;
 }
 // logo on the left of the navbar
-.my-header__logo--navbar {
-  padding-left: 1.5rem;
-  font-size: 2.8rem;
-  color: $black;
-  white-space: nowrap;
-  &:hover {
-    color: $link-grey;
-  }
-}
 .my-header__logo {
   padding-left: 1.5rem;
   font-size: 2.8rem;
@@ -37,9 +29,10 @@ Misc
 }
 @media screen and (max-width: 598px) {
   .my-header__logo {
-    position: fixed;
+    position: absolute;
     z-index: 101;
     top:0;
+    margin-left: 20px;
   }
   .my-header {
     background: $white;
@@ -55,6 +48,7 @@ Misc
 }
 .logo__unten {
   margin-top: -19px;
+  margin-bottom: 0;
   font-size: 0.9em;
 }
 
@@ -63,10 +57,8 @@ Misc
   display: flex;
   width: 100%;
   font-weight: 400;
-  // a {
-  //   color: $darker-grey;
-  // }
   font-size: 0.8em;
+  margin-bottom: 5px;
 }
 
 // navigation list
@@ -77,11 +69,11 @@ Misc
 }
 
 .my-nav__list {
-  padding-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 0;
   padding-top: .5em;
   height: 100%;
   font-size: 1.45rem;
@@ -160,7 +152,8 @@ Misc
     align-items: center;
   }
   .my-header__nav {
-    margin-top: 50px;
+    align-items: baseline;
+    margin-top: -15px;
   }
   .my-header__logo {
     padding-left: 0 !important;
@@ -174,7 +167,6 @@ Misc
   }
   .my-nav__list {
     padding-top: 0 !important;
-    margin-top: -70px;
   }
 }
 //medium screens nav-links breakpoint 2
@@ -185,7 +177,7 @@ Misc
     align-items: center;
   }
   .my-header__nav {
-    margin-top: 50px;
+    margin-top: 8px;
     width: 78%;
   }
   .my-header__logo {
@@ -208,7 +200,7 @@ Misc
 
   .my-header__nav {
     position: fixed;
-    padding-top: 55px;
+    padding-top: 30px;
     top: -50px;
     bottom: 0;
     left: 0;
@@ -224,18 +216,32 @@ Misc
   .nav-toggle {
     display: block;
     position: absolute;
+    padding: 20px;
     height: 50px;
     width: 50px;
-    right: 0;
+    top: 96px;
   }
   .my-header {
     flex-direction: row;
   }
+  .my-header__logo {
+    margin-top: 10px;
+  }
   .my-nav__list {
-    display: block;
-    margin-top: 90px;
-    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 120px;
+    padding-bottom: 41px;
     background: $lightest-grey;
   }
-
+}
+@media screen and (max-width: 598px) {
+  .my-header__logo {
+    font-size: 2.5em;
+  }
+  .nav-toggle {
+    height: 47px;
+  }
 }
