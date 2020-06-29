@@ -21,21 +21,18 @@ a {
 }
 
 .center-div {
-  display: inline-flex;
   margin: 0;
   padding: 0 !important;
   width: auto;
   max-width: 9000px;
+  white-space: nowrap;
 }
 
-#mikeauerbachhome {
-  box-sizing: content-box;
-  text-align: start;
+.mikeauerbachhome {
   font-size: 5rem;
-  line-height: 0.9;
+  font-weight: 400;
+  line-height: 1.5;
   font-family: $logo-font-home;
-  font-weight: 100;
-  letter-spacing: 1;
   color: $light-grey;
   transition: all 0.5s ease;
   &:hover {
@@ -43,9 +40,24 @@ a {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #mikeauerbachhome {
+mikeauerbachhome__oben {
+
+}
+
+.mikeauerbachhome__unten {
+  letter-spacing: -2.4px;
+  margin-top: -58px;
+}
+
+@media only screen and (max-width: 700px) {
+  .mikeauerbachhome {
     font-size: 4rem;
+      &:hover {
+      font-size: 4.5rem;
+    }
+  }
+  .mikeauerbachhome__unten {
+    margin-top: -46px;
   }
 }
 
