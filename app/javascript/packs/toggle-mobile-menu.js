@@ -3,28 +3,39 @@ const toggleMenu = () => {
   const headerNav = document.querySelector('.my-header__nav')
   const menu = document.querySelector(".my-nav__list");
   const contentDiv = document.querySelector('.content');
-console.log(menu)
-  const showMenu = () => {
-      if (menu.dataset.show === "true") {
+  const page = document.querySelector('#page-container');
+  // defaults
+  menu.style.transform = "translateX(-100%)";
+  headerNav.style.background = 'transparent';
+  contentDiv.style.marginTop = '105px';
 
-        menu.style.transform= "translateX(0%)";
-        headerNav.style.background = '$white';
-      } else {
-        menu.style.transform = "translateX(-100%)";
-        headerNav.style.background = 'transparent';
-        contentDiv.style.marginTop = '105px';
-      }
-  }
+  if (menu) {
+    const showMenu = () => {
+        if (menu.dataset.show === "true") {
+          menu.style.transform= "translateX(0%)";
+          headerNav.style.background = '$white';
+          page.style.position = 'fixed';
+        } else {
+          menu.style.transform = "translateX(-100%)";
+          headerNav.style.background = 'transparent';
+          contentDiv.style.marginTop = '105px';
+          page.style.position = 'relative';
+        }
+    }
 
 
-  if (hamburger) {
-    hamburger.addEventListener('click', (event) => {
-      event.preventDefault();
-      console.log('clicked', 'menu.dataset.show = ', menu.dataset.show )
-      showMenu();
-      menu.dataset.show = menu.dataset.show == 'true' ? 'false' : 'true';
-      console.log('clicked again', 'menu.dataset.show = ', menu.dataset.show)
-    });
+    if (hamburger) {
+      hamburger.addEventListener('click', (event) => {
+        event.preventDefault();
+        showMenu();
+        menu.dataset.show = menu.dataset.show == 'true' ? 'false' : 'true';
+      });
+    }
   }
 }
+
+
+// add listener to disable scroll
+
+// Remove listener to re-enable scroll
 export { toggleMenu };
