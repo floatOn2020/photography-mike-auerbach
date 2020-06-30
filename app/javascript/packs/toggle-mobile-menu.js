@@ -4,25 +4,32 @@ const toggleMenu = () => {
   const menu = document.querySelector(".my-nav__list");
   const contentDiv = document.querySelector('.content');
   const page = document.querySelector('#page-container');
+  const cont = document.querySelector('.cont');
   // defaults
-  menu.style.transform = "translateX(-100%)";
-  headerNav.style.background = 'transparent';
-  contentDiv.style.marginTop = '105px';
-
-  if (menu) {
-    const showMenu = () => {
-        if (menu.dataset.show === "true") {
-          menu.style.transform= "translateX(0%)";
-          headerNav.style.background = '$white';
-          page.style.position = 'fixed';
-        } else {
-          menu.style.transform = "translateX(-100%)";
-          headerNav.style.background = 'transparent';
-          contentDiv.style.marginTop = '105px';
-          page.style.position = 'relative';
-        }
+  if ((window.matchMedia("(max-width: 598px)")).matches && menu) {
+    menu.style.transform = "translateX(-300%)";
+    contentDiv.style.marginTop = '105px';
+    headerNav.style.height = 'fit-content';
+  } else {
+    menu.style.transform = "translateX(0)";
+    headerNav.style.background = '$white';
+    headerNav.style.height = '100%';
+    contentDiv.style.marginTop = '2px';
+  }
+  const showMenu = () => {
+    if (menu.dataset.show === "true") {
+      headerNav.style.height = '100%';
+      menu.style.transform= "translateX(0%)";
+      headerNav.style.background = '$white';
+      console.log(headerNav.style.height);
+      page.style.position = 'fixed';
+    } else {
+      menu.style.transform = "translateX(-100%)";
+      headerNav.style.height = 'fit-content';
+      contentDiv.style.marginTop = '105px';
+      page.style.position = 'relative';
     }
-
+    }
 
     if (hamburger) {
       hamburger.addEventListener('click', (event) => {
@@ -32,10 +39,6 @@ const toggleMenu = () => {
       });
     }
   }
-}
 
 
-// add listener to disable scroll
-
-// Remove listener to re-enable scroll
 export { toggleMenu };
