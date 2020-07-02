@@ -4,7 +4,9 @@ const toggleMenu = () => {
   const menu = document.querySelector(".my-nav__list");
   const contentDiv = document.querySelector('.content');
   const page = document.querySelector('#page-container');
-  if ((window.matchMedia("(max-width: 598px)")).matches && menu) {
+  const shouldRun = (window.matchMedia("(max-width: 598px)")).matches && menu
+
+  if (shouldRun) {
     menu.style.height = '100vh';
     contentDiv.style.marginTop = '105px';
     Nav.style.height = '99px';

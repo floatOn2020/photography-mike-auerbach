@@ -1,0 +1,5 @@
+meta_product_name: "Photography Mike Auerbach"
+meta_title: "Eventfotografie, Modefotografien, Lifestyle, Portraits"
+meta_description: "Mike Auerbach offers high quality images of you and your product."
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards

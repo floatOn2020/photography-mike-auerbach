@@ -30,9 +30,7 @@ a {
 
 .mikeauerbachhome {
   font-size: 5rem;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: $logo-font-home;
+  font-family: $logo-font;
   color: $light-grey;
   transition: all 0.5s ease;
   &:hover {
@@ -45,19 +43,19 @@ mikeauerbachhome__oben {
 }
 
 .mikeauerbachhome__unten {
-  letter-spacing: -2.4px;
-  margin-top: -58px;
+  letter-spacing: -2.8px;
+  margin-top: -42px;
 }
 
 @media only screen and (max-width: 700px) {
   .mikeauerbachhome {
-    font-size: 4rem;
+    font-size: 4.5rem;
       &:hover {
-      font-size: 4.5rem;
+      font-size: 5rem;
     }
   }
   .mikeauerbachhome__unten {
-    margin-top: -46px;
+    margin-top: -42px;
   }
 }
 
