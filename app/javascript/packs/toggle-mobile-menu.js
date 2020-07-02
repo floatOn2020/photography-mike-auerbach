@@ -7,7 +7,7 @@ const toggleMenu = () => {
   const shouldRun = (window.matchMedia("(max-width: 598px)")).matches && menu
 
   if (shouldRun) {
-    menu.style.height = '100vh';
+    menu.style.height = '83vh';
     contentDiv.style.marginTop = '105px';
     Nav.style.height = '99px';
   } else {
@@ -38,6 +38,5 @@ const toggleMenu = () => {
       });
     }
   }
-
 
 export { toggleMenu };

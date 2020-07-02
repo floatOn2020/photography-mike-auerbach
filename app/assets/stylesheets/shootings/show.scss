@@ -1,5 +1,11 @@
 .carousel-inner {
   padding-top: 1em;
+  max-height: 77vh;
+}
+@media (max-width: 598px) {
+  .carousel-inner {
+    padding-top: 0;
+  }
 }
 
 #carouselExampleControls {

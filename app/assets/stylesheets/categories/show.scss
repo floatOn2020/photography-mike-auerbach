@@ -22,6 +22,7 @@
   }
 }
 .shoot-card {
+  max-height: 70vh;
   position: relative;
   padding-bottom: 125%;
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
@@ -34,7 +35,9 @@
     // -webkit-text-stroke: 1px yellow;
   }
 }
-
+.shooting-card-link {
+  max-height: 77vh;
+}
 .shoot-name {
   display: flex;
   justify-content: center;
