@@ -19,12 +19,12 @@
   font-size: 1.6rem;
   color: $lightest-grey;
 }
-@media (min-width: 500px) {
-  .category-card-link:nth-of-type(3n) {
-    grid-column: span 2; /* Spans two columns */
-    grid-row: span 2; /* Spans two rows */
-  }
-}
+// @media (min-width: 500px) {
+//   .category-card-link:nth-of-type(3n) {
+//     grid-column: span 2; /* Spans two columns */
+//     grid-row: span 2; /* Spans two rows */
+//   }
+// }
 
 .category-name {
   position: absolute;
@@ -34,3 +34,4 @@
   font-family: $cards-font;
   font-weight: 400;
 }
+.categories-images {}
