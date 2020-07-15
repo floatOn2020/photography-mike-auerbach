@@ -9,23 +9,23 @@
 .category__image {
   position: relative;
   display: grid;
-  padding-bottom: 100%;
   max-width: 100%;
   min-height: 250px;
   min-width: 250px;
+  padding-bottom: 100%;
   font-size: 1.6rem;
+  font-family: $cards-font;
+  color: $lightest-grey;
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
-  color: $lightest-grey;
 }
 
 .category__name {
   position: absolute;
-  width: 100%;
   top: 40%;
+  width: 100%;
   text-align: center;
-  font-family: $cards-font;
   font-weight: 400;
 }
 @media (max-width: 598px) {

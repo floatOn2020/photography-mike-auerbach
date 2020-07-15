@@ -16,7 +16,7 @@ const toggleMenu = () => {
     contentDiv.style.marginTop = '2px';
   }
   const showMenu = () => {
-    if (menu.dataset.show === "true") {
+    if (menu && menu.dataset.show === "true") {
       menu.style.transition = 'all 1s cubic - bezier(.5, 0, .5, 1)';
       menu.style.transform = "translateX(0%)";
       Nav.style.background = '$white';
