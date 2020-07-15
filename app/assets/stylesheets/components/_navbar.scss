@@ -164,11 +164,6 @@ Misc
 }
 //medium screens nav-links breakpoint 2
 @media screen and (max-width: 820px) {
-  // .my-header {
-  //   // min-height: 184px;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
   .my-header__nav {
     margin-top: 8px;
     width: 78%;
@@ -214,12 +209,13 @@ Misc
   }
   .my-nav {
     margin-top: 50px;
-    height: 99px;
+    height: 107px;
     background: white;
   }
   .nav-toggle {
     display: block;
     position: fixed;
+    top: 37px;
   }
   .my-header {
     flex-direction: row;
@@ -245,38 +241,19 @@ Misc
     transform: translateX(100%);
     // transition: transform 1s cubic-bezier(.5, 0, .5, 1);
   }
-//   .my-nav__item:nth-child(1) {
-//   transform: translateX(-50px);
-//   }
-
-//   .my-nav__item:nth-child(2) {
-//     transform: translateX(-100px);
-//   }
-
-//   .my-nav__item:nth-child(3) {
-//     transform: translateX(-150px);
-//   }
-
-//   .my-nav__item:nth-child(4) {
-//     transform: translateX(-200px);
-//   }
-//   .my-nav__item:nth-child(5) {
-//     transform: translateX(-250px);
-//   }
-//   .my-nav__item:nth-child(6) {
-//     transform: translateX(-300px);
-//   }
 }
-@media screen and (max-width: 500px) {
-  .my-header__logo {
-    font-size: 2.5em;
-  }
-}
+
 @media screen and (max-width: 450px) {
   .hamburger {
     top: 89px;
   }
   .my-header {
     height: 100px;
+  }
+  .my-header__logo {
+    font-size: 2.5em;
+  }
+  .my-nav {
+    height: 95px;
   }
 }

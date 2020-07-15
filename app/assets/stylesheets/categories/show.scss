@@ -1,12 +1,8 @@
-// .my-cat-card {
-//   box-shadow: 0 4px 14px 0 hsla(0, 0%, 0%, 0.2);
+// .wrapper {
+//   display: block;
+//   margin: auto;
 // }
-
-.wrapper {
-  display: block;
-  margin: auto;
-}
-.shoot-cont {
+.shootings {
   font-size: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -15,6 +11,13 @@
   justify-content: center;
   margin: 0 5px 0 5px;
 }
+/*
+Positioning
+Box model
+Typographic
+Visual
+Misc
+*/
 @media (min-width: 500px) {
   .category-card-link:nth-of-type(3n) {
     grid-column: span 2; /* Spans two columns */
@@ -22,11 +25,12 @@
   }
 }
 .shoot-card {
-  max-height: 70vh;
+  height: 100%;
   position: relative;
   padding-bottom: 125%;
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   display: grid;
   color: $lightest-grey;
   font-size: 1.6rem;
@@ -35,9 +39,7 @@
     // -webkit-text-stroke: 1px yellow;
   }
 }
-.shooting-card-link {
-  max-height: 77vh;
-}
+
 .shoot-name {
   display: flex;
   justify-content: center;
@@ -45,4 +47,10 @@
 .name-text {
   position: absolute;
   top: 50%;
+}
+
+.shoot-card {
+  background-size: cover;
+  display: block;
+  max-height: 100%;
 }
