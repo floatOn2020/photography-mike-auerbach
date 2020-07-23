@@ -27,8 +27,7 @@ Misc
 }
 @media (min-width: 600px) {
   #carou-image {
-    height: 77vh;
-
+    max-height: 77vh;
   }
 }
 
@@ -45,7 +44,7 @@ Misc
 }
 .fa-chevron-left:before,
 .fa-chevron-right:before {
-    color: black;
-    opacity: 1;
-    font-size: 2.2rem;
-  }
+  color: black;
+  opacity: 1;
+  font-size: 2.2rem;
+}

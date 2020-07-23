@@ -2,13 +2,6 @@
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <% i.times do %>
-    <li data-target="#carouselExampleIndicators" data-slide-to='#{i}'></li>
-    <% end %>
-  </ol>
-
   <div class="carousel-inner">
     <div class="carousel-item active">
       <%= cl_image_tag @shooting.photos[0].key, class: "d-block", id: 'carou-image', alt: "First slide" %>
