@@ -35,9 +35,13 @@ Misc
   justify-content: flex-end;
   width: 50%;
   opacity: 1 !important;
+  position: fixed;
+  top: 19vh;
 }
 // carousel-control-prev has a left: 0 which i have to override with right:0, but this doesn't work
 .carousel-control-prev {
+  position: fixed;
+  top: 19vh;
   justify-content: flex-start;
   width: 50%;
   opacity: 1 !important;
