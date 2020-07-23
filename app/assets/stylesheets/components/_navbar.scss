@@ -32,7 +32,7 @@ Misc
   position: absolute;
   top: 8px;
   margin-bottom: -20px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   // letter-spacing: 0.1rem;
 }
 .logo__unten {
@@ -65,13 +65,13 @@ Misc
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 0;
-  padding-top: .5em;
+  padding-top: 0.5em;
   height: 100%;
   font-size: 1.45rem;
 }
 
 .my-nav__item {
-  padding: 0 .8em 0 .8em;
+  padding: 0 0.8em 0 0.8em;
   list-style: none;
   transition-timing-function: ease-in;
   a:hover {
@@ -121,22 +121,29 @@ Misc
   width: 2em;
   height: 3px;
   border-radius: 1em;
-  background-color: $dark-grey
-  ;
+  background-color: $dark-grey;
 }
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   transition: transform 250ms ease-in-out;
 }
-.hamburger:before { top: 6px; }
-.hamburger:after { bottom: 6px; }
-.hamburger:before { top: 9px; }
-.hamburger:after { bottom: 9px; }
+.hamburger:before {
+  top: 6px;
+}
+.hamburger:after {
+  bottom: 6px;
+}
+.hamburger:before {
+  top: 9px;
+}
+.hamburger:after {
+  bottom: 9px;
+}
 //large screens, nav-links breakpoint
 @media screen and (max-width: 1080px) {
   .my-header {
@@ -203,9 +210,8 @@ Misc
     height: 155px;
     background: $white;
     color: $dark-grey;
-    height: 120px;;
+    height: 120px;
     margin-top: 0;
-
   }
   .my-nav {
     margin-top: 50px;
@@ -224,7 +230,7 @@ Misc
   .my-header__logo {
     position: fixed;
     z-index: 101;
-    top:0;
+    top: 0;
     margin-left: 20px;
     margin-top: 10px;
   }
