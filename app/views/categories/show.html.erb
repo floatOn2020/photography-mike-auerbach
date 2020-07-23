@@ -4,7 +4,7 @@
     <%= link_to shooting_path(shoot) do %>
       <div class="shooting__image hoverable-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(shoot.cover) %>); :hover {background-image: linear-gradient(rgba(0,255,0,0.2), rgba(0,255,0,0.3)), url(<%=url_for(shoot.cover) %>)};">
           <div class="shooting__name">
-          <%= shoot.who_or_what%></div>
+          <%= shoot.who_or_what.upcase!%></div>
         </div>
     <% end %>
   <% end %>

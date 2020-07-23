@@ -2,7 +2,7 @@
       <% @categories.each do |category|%>
         <%= link_to category_path(category) do %>
           <div class="category__image hoverable-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(category.cover) %>)">
-            <h2 class="category__name"> <%= category.name%></h2>
+            <h2 class="category__name"> <%= category.name.upcase!%></h2>
           </div>
         <% end %>
       <% end %>
