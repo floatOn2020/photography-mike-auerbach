@@ -2,7 +2,10 @@ class ShootingsController < ApplicationController
   before_action :find_shooting, only: [:show, :edit]
 
   def show
-
+    respond_to do |format|
+      format.html           # renders /app/views/pages/show.html.erb
+      format.html.phone     # renders /app/views/pages/show.html+phone.erb
+    end
   end
 
   # def new

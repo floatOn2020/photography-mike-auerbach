@@ -1,0 +1,3 @@
+<% @shooting.photos[1..-1].each_with_index do |photo, index|%>
+    <%= cl_image_tag photo.key %>
+<% end %>
