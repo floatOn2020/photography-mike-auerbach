@@ -6,8 +6,10 @@ Visual
 Misc
 */
 .carousel-inner {
-  padding-top: 1em;
-  max-height: 78vh;
+  display: flex;
+  height: 78vh;
+  align-items: center;
+  padding-top: 0.5em;
 }
 @media (max-width: 1080px) {
   .carousel-inner {
@@ -24,6 +26,7 @@ Misc
 #carou-image {
   margin: auto;
   max-width: 100% !important;
+  max-height: 100% !important;
 }
 @media (min-width: 600px) {
   #carou-image {
@@ -48,7 +51,7 @@ Misc
 }
 .fa-chevron-left:before,
 .fa-chevron-right:before {
-  color: black;
+  color: $lighter-grey;
   opacity: 1;
   font-size: 2.2rem;
 }
