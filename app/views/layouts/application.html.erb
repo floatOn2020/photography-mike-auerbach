@@ -6,15 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <%= favicon_link_tag %>
       <title>Photography Mike Auerbach</title>
-      <title><%= meta_title %></title>
       <%= csrf_meta_tags %>
-      <!-- Facebook Open Graph data -->
-      <meta property="og:title" content="Photography of Events, Fashion, Lifestyle, Portraits, Interieur" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="<%= request.original_url %>" />
-      <meta property="og:image" content="<%= image_tag('mike_social_image.jpg') %>" />
-      <meta property="og:description" content="Mike Auerbach offers high quality photos of you and your product." />
-      <meta property="og:site_name" content='Photography of Events, Fashion, Lifestyle, Portraits, Interieur' />
 
       <%= action_cable_meta_tag %>
       <%= stylesheet_link_tag 'application', media: 'all' %>
