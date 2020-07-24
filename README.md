@@ -1,3 +1,3 @@
 
 Content management system for photographer using rails_admin for CRUD.
-Check out "people" category for a walk through all sites.
+Check out "people" category for a walk through the whole user story.
