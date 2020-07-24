@@ -3,11 +3,15 @@ class CategoriesController < ApplicationController
 
   def index
     @categories = Category.includes(cover_attachment: :blob).sort_by {|cat| cat.order_number }
+    # set_meta_tags title: 'Categories of Photographies',
+    #           description: 'Photos Categories.',
+    #           keywords: 'Photography Mike Auerbach Categories People Landscapes Interieur Design'
+    #           image: asset_url('mike_social_image.jpg')
   end
 
   def show
-    @shootings = []
-    @category.shooting_ids.each { |shoot| @shootings << Shooting.find(shoot)}
+    @shootings = Shooting.all.sort_by { |shoot| shoot.category.order_number }
+    # @category.shooting_ids.each { |shoot| @shootings << Shooting.find(shoot)}
     # where(@category == Shooting.category)
     # @shootings = Shooting.where(category == @category.name)
   end

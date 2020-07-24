@@ -4,14 +4,15 @@
       <meta charset="UTF-8">
       <meta name="description" content="Professional pictures of you or your product.">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+      <%#= display_meta_tags %>
       <%= favicon_link_tag %>
       <title>Photography Mike Auerbach</title>
       <%= csrf_meta_tags %>
-
       <%= action_cable_meta_tag %>
       <%= stylesheet_link_tag 'application', media: 'all' %>
       <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
+      <%#= display_meta_tags site: 'Photography Mike Auerbach' %>
     </head>
     <body>
       <div id="page-container">

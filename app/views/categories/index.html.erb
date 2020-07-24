@@ -1,9 +1,15 @@
-    <div class="categories">
-      <% @categories.each do |category|%>
-        <%= link_to category_path(category) do %>
-          <div class="category__image hoverable-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(category.cover) %>)">
-            <h2 class="category__name"> <%= category.name.upcase!%></h2>
-          </div>
-        <% end %>
-      <% end %>
-    </div>
+<%# set_meta_tags title: 'Categories of Photographies',
+                 description: 'Photos Categories.',
+                 keywords: 'Photography Mike Auerbach Categories People Landscapes Interieur Design'
+                #  image: 'mike_social_image.jpg'
+                 %>
+
+<div class="categories">
+  <% @categories.each do |category|%>
+    <%= link_to category_path(category) do %>
+      <div class="category__image hoverable-card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(<%=url_for(category.cover) %>)">
+        <h2 class="category__name"> <%= category.name.upcase!%></h2>
+      </div>
+    <% end %>
+  <% end %>
+</div>

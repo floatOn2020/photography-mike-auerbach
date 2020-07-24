@@ -17,6 +17,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'rack-mini-profiler'
 gem 'rails_admin', '~> 2.0'
+gem 'meta-tags'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
