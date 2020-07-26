@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @shootings = Shooting.all.sort_by { |shoot| shoot.category.order_number }
+    # @shootings = Shooting.all.sort_by { |shoot| shoot.category.order_number }
     # @category.shooting_ids.each { |shoot| @shootings << Shooting.find(shoot)}
     # where(@category == Shooting.category)
     # @shootings = Shooting.where(category == @category.name)

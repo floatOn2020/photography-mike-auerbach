@@ -1,6 +1,10 @@
 class ShootingsController < ApplicationController
   before_action :find_shooting, only: [:show, :edit]
 
+  def index
+    @categories = Category.all
+    @shootings = Shooting.all.sort_by { |shoot| shoot.category.order_number }
+  end
   def show
     respond_to do |format|
       format.html           # renders /app/views/pages/show.html.erb

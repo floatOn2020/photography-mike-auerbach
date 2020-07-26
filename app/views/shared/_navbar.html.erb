@@ -13,9 +13,9 @@
 
     <nav class="my-nav" >
       <ul class="my-nav__list" data-show="false">
-          <li class="my-nav__item">
+          <%# <li class="my-nav__item">
             <%= link_to 'Home', categories_path, class: "my-nav__link" %>
-          </li>
+          <%# </li> %>
           <% sorted_categories = Category.all.sort_by {|cat| cat.order_number } %>
         <% sorted_categories.each do |category|%>
           <li class="my-nav__item">
