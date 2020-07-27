@@ -4,7 +4,7 @@
   <% category_shoots.each do |shootings| %>
     <%# shootings == array of shootings %>
     <% if !shootings.empty? %>
-      <div class="shootings-header">
+      <div class="shootings-header" id="<%=shootings[0].category.name%>">
         <%= shootings[0].category.name.upcase! %>
       </div>
     <% end %>
