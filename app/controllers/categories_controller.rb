@@ -16,11 +16,6 @@ class CategoriesController < ApplicationController
     # @shootings = Shooting.where(category == @category.name)
   end
 
-  def filter_categories_for_links
-    # link = params[:go_to]
-    # @categories = Category.where(category: "People")
-    # render :index
-  end
 
   # def new
   #   @category = Category.new

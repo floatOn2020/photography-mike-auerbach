@@ -1,1 +1,17 @@
- <%= render 'shared/shootings_grid, shootings: @shootings' %>
+<%# @categories_shoots == array of array of shootings-arrays by category %>
+<% @categories_shoots.each do |category_shoots|  %>
+  <%# category_shoots == array of array of shootings of one category %>
+  <% category_shoots.each do |shootings| %>
+    <%# shootings == array of shootings %>
+    <% if !shootings.empty? %>
+      <div class="shootings-header">
+        <%= shootings[0].category.name.upcase! %>
+      </div>
+    <% end %>
+    <div class="shootings">
+      <% shootings.each do |shoot|%>
+        <%= render 'shared/shooting_card', shoot: shoot %>
+      <% end %>
+    </div>
+  <% end %>
+<% end %>
