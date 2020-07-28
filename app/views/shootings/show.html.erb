@@ -1,14 +1,15 @@
-<% i = @shooting.photos.length - 1%>
+<%# html for desktop (toggled with toggle-mobile-menu.js) %>
+<% name = @shooting.who_or_what %>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <%= cl_image_tag @shooting.photos[0].key, class: "d-block", id: 'carou-image', alt: "First slide" %>
+      <%= cl_image_tag @shooting.photos[0].key, class: "d-block", id: 'carou-image', alt: "First slide, photo of #{name}" %>
     </div>
     <% @shooting.photos[1..-1].each_with_index do |photo, index|%>
       <div class="carousel-item">
-        <%= cl_image_tag photo.key, class: "d-block", id: 'carou-image', alt: "#{i}. slide" %>
+        <%= cl_image_tag photo.key, class: "d-block", id: 'carou-image', alt: "photo of #{name}" %>
       </div>
     <% end %>
   </div>
@@ -21,6 +22,7 @@
   </a>
 </div>
 
+<%# html for mobile %>
 <% @shooting.photos[0..-1].each do |photo|%>
-  <%= cl_image_tag photo.key, class: "mobile-img-show hide"%>
+  <%= cl_image_tag photo.key, class: "mobile-img-show hide", alt: "photo of #{name}"%>
 <% end %>
