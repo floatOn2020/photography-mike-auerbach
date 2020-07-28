@@ -1,19 +1,11 @@
-/*
-Positioning
-Box model
-Typographic
-Visual
-Misc
-*/
-.container {
-  max-width: 9000px;
-}
 a {
   text-decoration: none !important;
 }
 #backgr {
+  max-width: 9000px;
   margin: 0;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url('home-backgr.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    asset-url("home-backgr.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -28,14 +20,14 @@ a {
 }
 
 .center-div {
+}
+
+.mikeauerbachhome {
   margin: 0;
   padding: 0 !important;
   width: auto;
   max-width: 9000px;
   white-space: nowrap;
-}
-
-.mikeauerbachhome {
   font-size: 5rem;
   font-family: $logo-font;
   color: $light-grey;
@@ -46,23 +38,19 @@ a {
 }
 
 mikeauerbachhome__oben {
-
 }
 
 .mikeauerbachhome__unten {
-  letter-spacing: -2.8px;
-  margin-top: -42px;
+  letter-spacing: -2.7px;
+  margin-top: -26px;
 }
 
 @media only screen and (max-width: 700px) {
   .mikeauerbachhome {
     font-size: 4.5rem;
-      &:hover {
+    &:hover {
       font-size: 5rem;
     }
-  }
-  .mikeauerbachhome__unten {
-    margin-top: -42px;
   }
 }
 

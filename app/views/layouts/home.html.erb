@@ -24,10 +24,10 @@
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %> <!-- from app/javascript/packs/application.js -->
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
+
   <body>
     <%= link_to shootings_path do %>
       <div id="backgr" class="container">
@@ -42,4 +42,3 @@
     <% end %>
   </body>
 </html>
-
