@@ -124,9 +124,7 @@ sup {
 sub {
   bottom: -0.25em;
 }
-a:hover {
-  text-decoration: underline;
-}
+
 ins,
 a {
   text-decoration: none;
@@ -191,7 +189,7 @@ img {
 }
 @media (max-width: 598px) {
   #content-wrap {
-    display: flex;
+    // display: flex;
     // align-items: center;
   }
   .content {
