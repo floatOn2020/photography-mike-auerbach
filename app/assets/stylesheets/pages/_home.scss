@@ -19,14 +19,11 @@ a {
   font-weight: 100;
 }
 
-.center-div {
-}
-
 .mikeauerbachhome {
-  margin: 0;
-  padding: 0 !important;
   width: auto;
   max-width: 9000px;
+  margin: 0;
+  padding: 0 !important;
   white-space: nowrap;
   font-size: 5rem;
   font-family: $logo-font;
@@ -35,9 +32,6 @@ a {
   &:hover {
     font-size: 6rem;
   }
-}
-
-mikeauerbachhome__oben {
 }
 
 .mikeauerbachhome__unten {
@@ -52,11 +46,4 @@ mikeauerbachhome__oben {
       font-size: 5rem;
     }
   }
-}
-
-.alert-wip {
-  font-size: 2.5rem;
-  padding: 1rem;
-  margin-bottom: 20vh;
-  color: red;
 }
