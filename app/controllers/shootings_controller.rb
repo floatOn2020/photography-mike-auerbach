@@ -11,50 +11,7 @@ class ShootingsController < ApplicationController
     end
   end
 
-  def show
-    respond_to do |format|
-      format.html           # renders /app/views/pages/show.html.erb
-      format.html.phone     # renders /app/views/pages/show.html+phone.erb
-    end
-  end
-
-  # def new
-  #   @shooting = Shooting.new
-  # end
-
-  # def create
-  #   @shooting = Shooting.new(shooting_params)
-  #   @category = @shooting.category
-
-  #   if @shooting.save!
-  #     # @shooting.photos.attach(params[:photos])
-  #     redirect_to category_path(@shooting.category)
-  #   else
-  #     render :new
-  #   end
-  # end
-
-  # def edit; end
-
-  # def update
-  #   @shooting = Shooting.new(shooting_params)
-  #   if @shooting.update(shooting_params)
-  #     redirect_to category_path(@shooting.category)
-  #   else
-  #     render :edit
-  #   end
-  # end
-
-
-  # def destroy
-  #   @shooting.destroy
-  #   redirect_to shootings_path
-
-  #   # respond_to do |format|
-  #   #   format.html { render 'dashboard/goals' }
-  #   #   format.js  { render :layout => false }
-  #   # end
-  # end
+  def show; end
 
   private
 
