@@ -2,6 +2,7 @@
 .my-header {
   position: relative;
   display: flex;
+  z-index: 3;
   justify-content: space-between;
   margin-bottom: -13px;
   font-family: $nav-font;

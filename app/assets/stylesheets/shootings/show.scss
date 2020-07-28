@@ -1,5 +1,6 @@
 .carousel-inner {
   display: flex;
+  z-index: 1;
   height: 77vh;
   align-items: center;
   padding-top: 0.5em;
@@ -22,6 +23,7 @@
 .carousel-control-next,
 .carousel-control-prev {
   position: fixed;
+  z-index: 2;
   width: 50%;
   opacity: 1 !important;
 }
