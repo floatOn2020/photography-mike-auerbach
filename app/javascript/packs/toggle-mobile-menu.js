@@ -37,6 +37,13 @@ const toggleMenu = () => {
       showMenu();
     });
   }
-};
+  // hide menu on click on link
+  const hideMenu = () => {
+    menu.style.transform = "translateX(100%)";
+    page.style.position = "relative";
+  };
 
+  const navLinks = document.querySelectorAll(".my-nav__link");
+  navLinks.forEach((link) => link.addEventListener("click", hideMenu));
+};
 export { toggleMenu };
