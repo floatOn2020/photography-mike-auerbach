@@ -10,6 +10,18 @@ const toggleMenu = () => {
     menu.style.height = "89vh";
     contentDiv.style.marginTop = "105px";
     Nav.style.height = "99px";
+    // hide menu on click on link
+    const hideMenu = () => {
+      menu.style.transform = "translateX(100%)";
+      contentDiv.style.width = "100vw";
+      menu.style.transform = "translateX(100%)";
+      Nav.style.transition = "transform 1s";
+      Nav.style.height = "99px";
+      page.style.position = "relative";
+    };
+
+    const navLinks = document.querySelectorAll(".my-nav__link");
+    navLinks.forEach((link) => link.addEventListener("click", hideMenu));
   } else {
     menu.style.transform = "translateX(0)";
     Nav.style.background = "$white";
@@ -37,13 +49,5 @@ const toggleMenu = () => {
       showMenu();
     });
   }
-  // hide menu on click on link
-  const hideMenu = () => {
-    menu.style.transform = "translateX(100%)";
-    page.style.position = "relative";
-  };
-
-  const navLinks = document.querySelectorAll(".my-nav__link");
-  navLinks.forEach((link) => link.addEventListener("click", hideMenu));
 };
 export { toggleMenu };
