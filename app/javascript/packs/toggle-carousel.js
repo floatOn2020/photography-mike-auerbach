@@ -4,7 +4,7 @@ const controls = document.querySelector(".controls");
 const mobileViews = document.querySelectorAll(".mobile-img-show");
 
 const toggleOn =
-  window.matchMedia("(max-width: 598px)").matches && carouselInner;
+  window.matchMedia("(max-width: 598px)").matches && indicators;
 
 const toggleCarousel = () => {
   if (toggleOn) {

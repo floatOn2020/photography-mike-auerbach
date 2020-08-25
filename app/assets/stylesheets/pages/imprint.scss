@@ -1,5 +1,6 @@
 .imprint {
   text-align: left;
+  color: $link-grey;
 }
 .main-header {
   font-size: 3rem;
@@ -9,4 +10,9 @@
 .legal,
 .disclaimer {
   margin: 2rem;
+}
+.legal {
+  margin-top: 4rem;
+  color: $darker-grey;
+  font-size: small;
 }
