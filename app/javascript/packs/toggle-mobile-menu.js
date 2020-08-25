@@ -5,8 +5,9 @@ const toggleMenu = () => {
   const contentDiv = document.querySelector(".content");
   const page = document.querySelector("#page-container");
   const shouldRun = window.matchMedia("(max-width: 598px)").matches && menu;
-
+  const contactBorder = document.querySelector(".my-nav__contacts")
   if (shouldRun) {
+    contactBorder.style.borderLeft = "none";
     menu.style.height = "89vh";
     contentDiv.style.marginTop = "105px";
     Nav.style.height = "99px";
