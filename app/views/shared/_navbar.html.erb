@@ -19,6 +19,16 @@
             <%= link_to category.name, shootings_path(:anchor => category.name), class: "my-nav__link"  %>
           </li>
         <% end %>
+        <li>
+          <div class="my-nav__contacts">
+            <%= mail_to "photography@mike-auerbach.com", class: "my-nav__contact"  do %>
+            <i class="fa fa-envelope"></i>
+            <% end %>
+            <%= link_to "tel:+491723056408", class: "my-nav__contact" do%>
+            <i class="fa fa-phone-alt"></i>
+            <% end %>
+          </div>
+        </li>
       </ul>
     </nav>
 

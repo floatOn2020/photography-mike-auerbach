@@ -1,6 +1,13 @@
 <div class="footer">
   <div class="footer-links hoverable">
-    <%= mail_to "photography@mike-auerbach.com", "Contact me" %>
+    <div class="contacts">
+      <%= mail_to "photography@mike-auerbach.com" do %>
+      <i class="fa fa-envelope"></i>
+      <% end %>
+      <%= link_to "tel:+491723056408" do%>
+      <i class="fa fa-phone-alt"></i>
+      <% end %>
+    </div>
     <%= link_to 'Imprint', imprint_path%>
     <a href="https://www.instagram.com/mike_auerbach/?hl=de" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
   </div>
