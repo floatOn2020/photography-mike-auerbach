@@ -11,6 +11,7 @@
 }
 // logo on the left of the navbar
 .my-header__logo {
+  font-weight: 200;
   padding-left: 1.5rem;
   font-size: 2.8rem;
   color: $black;
@@ -24,12 +25,16 @@
   position: absolute;
   top: 8px;
   margin-bottom: -20px;
+  //test
+  // letter-spacing: -1px;
   letter-spacing: -0.5px;
+  font-weight: 400;
 }
 .logo__unten {
   margin-top: -19px;
   margin-bottom: 0;
   font-size: 0.9em;
+  font-weight: 400;
 }
 
 // nav-menu on the right
@@ -38,7 +43,9 @@
   width: 100%;
   height: auto;
   margin-bottom: 5px;
-  font-weight: 400;
+  // font-weight: 400;
+  //test
+  font-weight: 200;
   font-size: 0.8em;
   transform: translateX(0%);
 }
@@ -61,7 +68,7 @@
 }
 
 .my-nav__item {
-  padding: 0 0.8em 0 0.8em;
+  padding: 0 0.6em 0 0.6em;
   list-style: none;
   transition-timing-function: ease-in;
   a:hover {
@@ -248,13 +255,13 @@
 .my-nav__contacts {
   display: flex;
   justify-content: space-between;
-  border-left: 1.5px solid $link-grey;
+  border-left: 1.5px solid $light-grey;
   padding-left: 5px;
 }
 .nav-contact {
   padding: 0 !important;
 }
-.fa {
+.fa, .far, .fal {
   color: $link-grey;
   padding: 0 10px 0 10px;
 }
