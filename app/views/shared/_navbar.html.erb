@@ -16,7 +16,7 @@
         <% sorted_categories = Category.all.sort_by {|cat| cat.order_number } %>
         <% sorted_categories.each do |category|%>
           <li class="my-nav__item">
-            <%= link_to category.name.upcase!, shootings_path(:anchor => category.name), class: "my-nav__link"  %>
+            <%= link_to category.name.upcase!, shootings_path(anchor: category.name.capitalize), class: "my-nav__link"  %>
           </li>
         <% end %>
         <li>
